@@ -1,0 +1,11 @@
+The productGreenhouse includes the following software:
+
+Bootstrap Select - MIT License
+https://github.com/silviomoreto/bootstrap-select
+
+
+
+
+
+
+

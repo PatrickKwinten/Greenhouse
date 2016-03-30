@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core"
+	xmlns:xe="http://www.ibm.com/xsp/coreex"
+	xmlns:xc="http://www.ibm.com/xsp/custom">
+
+	<xe:applicationLayout id="applicationLayout1">
+		<xp:this.facets>
+			<xc:ccMenu xp:key="LeftColumn"></xc:ccMenu></xp:this.facets>
+		<xp:callback facetName="facet_1" id="callback1"></xp:callback>
+		<xe:this.configuration>
+			<xe:simpleResponsiveConfiguration
+				navbarText="Bootstrap samples" invertedNavbar="true" navbar="true"
+				pageWidth="fluid">
+				<xe:this.navbarAppLinks>
+					<xe:pageTreeNode page="/home.xsp"></xe:pageTreeNode>
+				</xe:this.navbarAppLinks>
+			</xe:simpleResponsiveConfiguration>
+		</xe:this.configuration>
+	</xe:applicationLayout>
+</xp:view>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom">
+	<xp:this.resources>
+		<xp:script src="/common.js" clientSide="true" />
+	</xp:this.resources>
+	<xc:bootstrapselect_resources />
+	<xp:scriptBlock id="scriptBlock1">
+<xp:this.value><![CDATA[
+$(document).ready(
+function() {
+x$( "#{id:listBox1}" ).selectpicker({
+style: 'btn-info',
+size: 4,
+title: 'Choose one of the following...'
+});
+});
+]]></xp:this.value>
+</xp:scriptBlock>
+
+<xp:scriptBlock id="scriptBlock2">
+<xp:this.value><![CDATA[
+$(document).ready(
+function() {
+x$( "#{id:comboBox1}" ).selectpicker({
+style: 'btn-success',
+size: 4,
+title: 'Select an option...'
+});
+});
+]]></xp:this.value>   
+</xp:scriptBlock>
+
+	<xc:ccLayout><xp:this.facets>
+	<xp:panel xp:key="facet_1">
+	<h2>Bootstrap Select</h2>
+<h4>Bootstrap-select is a jQuery plugin that utilizes Bootstrap's dropdown.js to
+style and bring additional functionality to normal select boxes.</h4>
+<p>Available on GitHub: https://github.com/silviomoreto/bootstrap-select</p>
+<div class="row">
+	<div class="selectpicker">
+		<h3>List-picker:</h3>
+		<xp:listBox id="listBox1" multiple="true">
+			<xp:selectItem itemLabel="Audi"></xp:selectItem>
+			<xp:selectItem itemLabel="BMW"></xp:selectItem>
+			<xp:selectItem itemLabel="Mercedes"></xp:selectItem>
+		</xp:listBox>
+	</div>
+</div>
+
+
+<div class="row">
+	<h3>Combobox:</h3>
+	<div class="selectpicker">
+		<xp:comboBox id="comboBox1">	
+			<xp:selectItem itemLabel="Audi"></xp:selectItem>
+			<xp:selectItem itemLabel="BMW"></xp:selectItem>
+			<xp:selectItem itemLabel="Mercedes"></xp:selectItem>
+		</xp:comboBox>
+	</div>
+</div>
+
+	</xp:panel></xp:this.facets></xc:ccLayout>
+</xp:view>
