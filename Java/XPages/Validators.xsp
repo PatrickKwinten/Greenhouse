@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core">
+	Email:
+	<xp:inputText id="txtEmail" required="true"
+		disableClientSideValidation="true" validator="#{validators.validateEmail}">
+		<xp:this.validators>
+			<xp:validateRequired message="Field is empty." />
+		</xp:this.validators>
+	</xp:inputText>
+	<xp:message for="txtEmail" />
+	<xp:br />
+	<xp:br />
+	IP Address:
+	<xp:inputText id="txtIPAddress" required="true"
+		disableClientSideValidation="true" validator="#{validators.validateIPAddress}">
+		<xp:this.validators>
+			<xp:validateRequired message="Field is empty." />
+		</xp:this.validators>
+	</xp:inputText>
+	<xp:message for="txtIPAddress" />
+	<xp:br />
+	<xp:br />
+	URL:
+	<xp:inputText id="txtURL" required="true"
+		disableClientSideValidation="true" validator="#{validators.validateUrl}">
+		<xp:this.validators>
+			<xp:validateRequired message="Field is empty." />
+		</xp:this.validators>
+	</xp:inputText>
+	<xp:message for="txtURL" />
+	<xp:br />
+	<xp:br />
+	ISBN:
+	<xp:inputText id="txtISBN" required="true"
+		disableClientSideValidation="true" validator="#{validators.validateISBN}">
+		<xp:this.validators>
+			<xp:validateRequired message="Field is empty." />
+		</xp:this.validators>
+	</xp:inputText>
+	<xp:message for="txtISBN" />
+	<xp:br />
+	<xp:br />
+	Credit card:
+	<xp:inputText id="txtCreditCard" required="true"
+		disableClientSideValidation="true" validator="#{validators.validateAnyCreditCard}">
+		<xp:this.validators>
+			<xp:validateRequired message="Field is empty." />
+		</xp:this.validators>
+	</xp:inputText>
+	<xp:message for="txtCreditCard" />
+	<xp:br />
+	<xp:br />
+	Credit Card AMEX:
+	<xp:inputText id="txtCreditCardAMEX" required="true"
+		disableClientSideValidation="true" validator="#{validators.validateAmexCreditCard}">
+		<xp:this.validators>
+			<xp:validateRequired message="Field is empty." />
+		</xp:this.validators>
+	</xp:inputText>
+	<xp:message for="txtCreditCardAMEX" />
+	<xp:br />
+	<xp:br />
+	Credit Card Diners:
+	<xp:inputText id="txtCreditCardDiners" required="true"
+		disableClientSideValidation="true" validator="#{validators.validateDinersCreditCard}">
+		<xp:this.validators>
+			<xp:validateRequired message="Field is empty." />
+		</xp:this.validators>
+	</xp:inputText>
+	<xp:message for="txtCreditCardDiners" />
+	<xp:br />
+	<xp:br />
+	Credit Card Discover:
+	<xp:inputText id="txtCreditCardDiscover" required="true"
+		disableClientSideValidation="true" validator="#{validators.validateDiscoverCreditCard}">
+		<xp:this.validators>
+			<xp:validateRequired message="Field is empty." />
+		</xp:this.validators>
+	</xp:inputText>
+	<xp:message for="txtCreditCardDiscover" />
+	<xp:br />
+	<xp:br />
+	Credit Card Master:
+	<xp:inputText id="txtCreditCardMaster" required="true"
+		disableClientSideValidation="true"
+		validator="#{validators.validateMasterCardCreditCard}">
+		<xp:this.validators>
+			<xp:validateRequired message="Field is empty." />
+		</xp:this.validators>
+	</xp:inputText>
+	<xp:message for="txtCreditCardMaster" />
+	<xp:br />
+	<xp:br />
+	Credit Card Visa:
+	<xp:inputText id="txtCreditCardVisa" required="true"
+		disableClientSideValidation="true" validator="#{validators.validateVisaCreditCard}">
+		<xp:this.validators>
+			<xp:validateRequired message="Field is empty." />
+		</xp:this.validators>
+	</xp:inputText>
+	<xp:message for="txtCreditCardVisa" />
+	<xp:br />
+	<xp:br />
+	<xp:button value="Submit" id="btnSubmit">
+		<xp:eventHandler event="onclick" submit="true"
+			refreshMode="complete" immediate="false" save="true" />
+	</xp:button>
+</xp:view>

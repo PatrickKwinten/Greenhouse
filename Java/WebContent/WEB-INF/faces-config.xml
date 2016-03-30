@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config>
+  <managed-bean>
+    <managed-bean-name>validators</managed-bean-name>
+    <managed-bean-class>com.quintessens.greenhouse.Validators</managed-bean-class>
+    <managed-bean-scope>view</managed-bean-scope>
+  </managed-bean>
+</faces-config>
