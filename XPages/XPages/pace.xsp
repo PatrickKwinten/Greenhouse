@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core"
+	xmlns:xc="http://www.ibm.com/xsp/custom" xmlns:xe="http://www.ibm.com/xsp/coreex">
+	<xc:pacejs_resources></xc:pacejs_resources>
+	<xp:button value="Refresh" id="button1">
+		<xp:eventHandler event="onclick" submit="true"
+			refreshMode="partial" refreshId="dataView1">
+		</xp:eventHandler></xp:button>
+	<xp:pager layout="Previous Group Next" partialRefresh="true"
+		id="pager1" for="dataView1">
+	</xp:pager>
+	<xe:dataView id="dataView1" rows="100" collapsibleDetail="true"
+		columnTitles="true" var="rowData">
+		<xp:this.facets>
+			<xp:panel xp:key="detail">
+				<xp:text escape="true" id="computedField1"
+					value="#{javascript:rowData.getColumnValue('job')}">
+				</xp:text>
+			</xp:panel>
+		</xp:this.facets>
+		<xe:this.data>
+			<xp:dominoView var="vwPanel" viewName="People"
+				sortColumn="job">
+			</xp:dominoView>
+		</xe:this.data>
+		<xe:this.summaryColumn>
+			<xe:viewSummaryColumn columnName="name"
+				columnTitle="Person">
+			</xe:viewSummaryColumn>
+		</xe:this.summaryColumn>
+		<xe:this.extraColumns>
+			<xe:viewExtraColumn columnName="job" columnTitle="Title"></xe:viewExtraColumn>
+		</xe:this.extraColumns>
+	</xe:dataView>
+
+</xp:view>
