@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.5" replicaid="C1257F86004A7469" version="9.0" xmlns="http://www.lotus.com/dxl">
-<noteinfo noteid="18a" sequence="5" unid="2223E4C9B1E1C6A6C1257F86004C69E4">
-<created><datetime dst="true">20160330T155438,44+02</datetime></created>
-<modified><datetime dst="true">20160330T155439,04+02</datetime></modified>
-<revised><datetime dst="true">20160330T155439,03+02</datetime></revised>
-<lastaccessed><datetime dst="true">20160330T155439,04+02</datetime></lastaccessed>
-<addedtofile><datetime dst="true">20160330T155438,45+02</datetime></addedtofile></noteinfo>
+<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.5" replicaid="C1257F86006718B8" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="166" sequence="10" unid="5CBC0BFBB95F59EAC1257F8600671989">
+<created><datetime dst="true">20160330T204607,45+02</datetime></created>
+<modified><datetime dst="true">20160330T210855,09+02</datetime></modified>
+<revised><datetime dst="true">20160330T210855,08+02</datetime></revised>
+<lastaccessed><datetime dst="true">20160330T210855,09+02</datetime></lastaccessed>
+<addedtofile><datetime dst="true">20160330T204607,50+02</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Patrick Kwinten/O=quintessens</name></updatedby>
 <wassignedby><name>CN=Patrick Kwinten/O=quintessens</name></wassignedby>
 <item name="$Flags"><text>34567Cg~[</text></item>

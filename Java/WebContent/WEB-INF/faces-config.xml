@@ -1,8 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <faces-config>
-  <managed-bean>
-    <managed-bean-name>validators</managed-bean-name>
-    <managed-bean-class>com.quintessens.greenhouse.Validators</managed-bean-class>
-    <managed-bean-scope>view</managed-bean-scope>
-  </managed-bean>
+	<managed-bean>
+		<managed-bean-name>validators</managed-bean-name>
+		<managed-bean-class>com.quintessens.greenhouse.Validators</managed-bean-class>
+		<managed-bean-scope>view</managed-bean-scope>
+	</managed-bean>
+  
+	<managed-bean>    
+		<managed-bean-name>EmailValidator</managed-bean-name>    
+		<managed-bean-class>com.quintessens.greenhouse.EmailValidator</managed-bean-class>    
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+ 
+	<validator>
+		<validator-id>EmailValidator</validator-id>
+		<validator-class>com.quintessens.greenhouse.EmailValidator
+		</validator-class>
+	</validator>
+
 </faces-config>

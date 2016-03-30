@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.5" replicaid="C1257F86006718B8" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="17e" sequence="21" unid="7FC4FE0B5BECD08BC1257F860068153E">
+<created><datetime dst="true">20160330T205651,82+02</datetime></created>
+<modified><datetime dst="true">20160330T210855,03+02</datetime></modified>
+<revised><datetime dst="true">20160330T210855,02+02</datetime></revised>
+<lastaccessed><datetime dst="true">20160330T210855,03+02</datetime></lastaccessed>
+<addedtofile><datetime dst="true">20160330T205651,83+02</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Patrick Kwinten/O=quintessens</name></updatedby>
+<wassignedby><name>CN=Patrick Kwinten/O=quintessens</name></wassignedby>
+<item name="$Flags"><text>gC~4K</text></item>
+<item name="$TITLE"><text>EmailValidator.xsp</text></item>
+
+
+<item name="$FileNames" sign="true"><text>EmailValidator.xsp</text></item>
+<item name="$DesignerVersion"><text>8.5</text></item>
+
+
+
+
+</note>
