@@ -5,9 +5,9 @@
     <default-prefix>xc</default-prefix>
   </faces-config-extension>
   <composite-component>
-    <component-type>ccMenu</component-type>
-    <composite-name>ccMenu</composite-name>
-    <composite-file>/ccMenu.xsp</composite-file>
+    <component-type>ccMenuPlugins</component-type>
+    <composite-name>ccMenuPlugins</composite-name>
+    <composite-file>/ccMenuPlugins.xsp</composite-file>
     <composite-extension>
       <designer-extension>
         <in-palette>true</in-palette>

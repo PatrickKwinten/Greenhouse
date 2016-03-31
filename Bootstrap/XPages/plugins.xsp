@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom">
+	<xc:ccLayout>
+		<xp:panel>
+			<div class="jumbotron">
+				<h1>Plugins</h1>
+				<br/>
+				<h4>An overview of plugins available for Bootstrap which are
+					adapted for XPages development</h4>
+					<p>Choose an option from the menu (left)...</p>
+			</div>
+		</xp:panel>
+		<xp:this.facets>
+			<xc:ccMenuPlugins xp:key="LeftColumn" />
+		</xp:this.facets>
+	</xc:ccLayout>
+</xp:view>

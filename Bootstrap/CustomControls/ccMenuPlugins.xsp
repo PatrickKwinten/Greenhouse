@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core"
+	xmlns:xe="http://www.ibm.com/xsp/coreex">
+
+	
+	<xe:navigator id="navigator1" expandable="true"
+		expandEffect="wipe">
+		<xe:this.treeNodes>
+			<xe:pageTreeNode page="/bootstrapselect.xsp"
+				title="Bootstrap Select">
+			</xe:pageTreeNode>
+
+
+			<xe:basicContainerNode label="Filestyle">
+				<xe:this.children>
+					<xe:pageTreeNode label="Normal"
+						page="/bootstrapfilestyle.xsp">
+					</xe:pageTreeNode>
+					<xe:pageTreeNode
+						page="/bootstrapfilestyle_jquery.xsp" label="jQuery">
+					</xe:pageTreeNode>
+				</xe:this.children>
+			</xe:basicContainerNode>
+		</xe:this.treeNodes>
+	</xe:navigator></xp:view>

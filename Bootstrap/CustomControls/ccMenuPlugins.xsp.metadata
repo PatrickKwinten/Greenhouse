@@ -4,9 +4,9 @@
     <text>gC~4;</text>
   </item>
   <item name="$TITLE" sign="true">
-    <text>ccLayout.xsp</text>
+    <text>ccMenuPlugins.xsp</text>
   </item>
   <item name="$FileNames" sign="true">
-    <text>ccLayout.xsp</text>
+    <text>ccMenuPlugins.xsp</text>
   </item>
 </note>

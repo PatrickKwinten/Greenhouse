@@ -30,13 +30,14 @@ title: 'Select an option...'
 ]]></xp:this.value>   
 </xp:scriptBlock>
 
-	<xc:ccLayout><xp:this.facets>
-	<xp:panel xp:key="facet_1">
-	<h2>Bootstrap Select</h2>
-<h4>Bootstrap-select is a jQuery plugin that utilizes Bootstrap's dropdown.js to
-style and bring additional functionality to normal select boxes.</h4>
+	<xc:ccLayout>
+		<xp:panel>
+		<h1>Plugins</h1>
+		<h3>Bootstrap Select</h3>
+<p>Bootstrap-select is a jQuery plugin that utilizes Bootstrap's dropdown.js to
+style and bring additional functionality to normal select boxes.</p>
 <p>Available on GitHub: https://github.com/silviomoreto/bootstrap-select</p>
-<div class="row">
+<div class="panel">
 	<div class="selectpicker">
 		<h3>List-picker:</h3>
 		<xp:listBox id="listBox1" multiple="true">
@@ -46,9 +47,7 @@ style and bring additional functionality to normal select boxes.</h4>
 		</xp:listBox>
 	</div>
 </div>
-
-
-<div class="row">
+<div class="panel">
 	<h3>Combobox:</h3>
 	<div class="selectpicker">
 		<xp:comboBox id="comboBox1">	
@@ -58,6 +57,8 @@ style and bring additional functionality to normal select boxes.</h4>
 		</xp:comboBox>
 	</div>
 </div>
-
-	</xp:panel></xp:this.facets></xc:ccLayout>
+		</xp:panel>
+		<xp:this.facets>
+			<xc:ccMenuPlugins xp:key="LeftColumn"></xc:ccMenuPlugins>
+		</xp:this.facets></xc:ccLayout>
 </xp:view>
