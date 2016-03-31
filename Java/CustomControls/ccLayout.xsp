@@ -47,7 +47,7 @@
 				<xe:this.bannerUtilityLinks>
 					<xe:basicContainerNode
 						style="color:rgb(128,128,128)">
-						<xe:this.label><![CDATA[#{javascript:return "Bootstrap Greenhouse";}]]></xe:this.label>
+						<xe:this.label><![CDATA[#{javascript:return "Java Greenhouse";}]]></xe:this.label>
 						<xe:this.children>
 							<xe:basicLeafNode label="Goto Home"
 								submitValue="home">
