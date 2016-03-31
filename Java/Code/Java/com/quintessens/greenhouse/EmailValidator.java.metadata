@@ -1,18 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.5" replicaid="C1257F86006718B8" version="9.0" xmlns="http://www.lotus.com/dxl">
-<noteinfo noteid="17a" sequence="12" unid="6068A3715BC1BCD0C1257F8600675EBA">
-<created><datetime dst="true">20160330T204904,58+02</datetime></created>
-<modified><datetime dst="true">20160330T210855,13+02</datetime></modified>
-<revised><datetime dst="true">20160330T210855,12+02</datetime></revised>
-<lastaccessed><datetime dst="true">20160330T210855,13+02</datetime></lastaccessed>
-<addedtofile><datetime dst="true">20160330T204904,59+02</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Patrick Kwinten/O=quintessens</name></updatedby>
-<wassignedby><name>CN=Patrick Kwinten/O=quintessens</name></wassignedby>
-<item name="$Flags"><text>34567Cg~[</text></item>
-<item name="$TITLE"><text>com/quintessens/greenhouse/EmailValidator.java</text></item>
-<item name="$DesignerVersion"><text>8.5.3</text></item>
-
-
-<item name="$FileNames" sign="true"><text>com/quintessens/greenhouse/EmailValidator.java</text></item>
-
-
+<?xml version="1.0" encoding="UTF-8"?>
+<note xmlns="http://www.lotus.com/dxl" class="form">
+  <item name="$Flags">
+    <text>34567Cg~[</text>
+  </item>
+  <item name="$TITLE">
+    <text>com/quintessens/greenhouse/EmailValidator.java</text>
+  </item>
+  <item name="$FileNames" sign="true">
+    <text>com/quintessens/greenhouse/EmailValidator.java</text>
+  </item>
 </note>
