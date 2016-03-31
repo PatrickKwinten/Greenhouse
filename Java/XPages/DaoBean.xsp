@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom">
+
+	<xc:ccLayout>
+		<xp:this.facets>
+			<xc:ccMenu xp:key="LeftColumn" />
+		</xp:this.facets>
+		<xp:panel>
+			
+			
+			<div role="form">
+  <div class="form-group">
+    <label for="email">#{dao.dbpath}</label><br/>
+    <xp:text escape="true" id="computedField1" value="#{dao.dbpath}" />
+  </div>
+  
+  <div class="form-group">
+    <label for="pwd">#{dao.server}</label><br/>
+   <xp:text escape="true" id="computedField2" value="#{dao.server}" />
+  </div>
+  
+  <div class="form-group">
+    <label for="pwd">#{dao.filepath}</label><br/>
+   <xp:text escape="true" id="computedField3" value="#{dao.filepath}" />
+  </div>
+  
+  
+</div>
+		</xp:panel>
+	</xc:ccLayout>
+</xp:view>

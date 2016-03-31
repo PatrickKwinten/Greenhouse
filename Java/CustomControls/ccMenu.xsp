@@ -6,8 +6,8 @@
 	<xe:navigator id="navigator1" expandable="true"
 		expandEffect="wipe">
 		<xe:this.treeNodes>
-			<xe:pageTreeNode page="/bootstrapselect.xsp"
-				title="Bootstrap Select">
+			<xe:pageTreeNode page="/DaoBean.xsp"
+				title="DaoBean">
 			</xe:pageTreeNode>
 
 
