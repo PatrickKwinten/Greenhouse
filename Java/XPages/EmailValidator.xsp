@@ -1,125 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xp:view xmlns:xp="http://www.ibm.com/xsp/core">
-	<xp:tr style="font-family:Verdana">
-		<xp:tr style="font-family:Verdana">
-			<xp:td colspan="3"
-				style="background-color:rgb(220,220,220);font-size:9pt;font-weight:bold;font-family:Verdana">
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom">	<xc:ccLayout>		<xp:this.facets>			<xc:ccMenu xp:key="LeftColumn" />		</xp:this.facets>		<xp:panel>
+		<h1>Validation</h1>
+		<h3>Email</h3>
+			<div role="form">
+				<div class="form-group">
+					&#160;*Indicates Required Information
+				</div>
+			
+				<div class="form-group">
+					<label for="lastName">Lastname *</label>
+					<xp:inputText value="#{EmailValidator.lastName}" id="lastName"
+						required="true" disableClientSideValidation="true">
+						<xp:this.validators>
+							<xp:validateRequired message="Enter Last Name" />
+						</xp:this.validators>
+					</xp:inputText>
+					<xp:message for="lastName" />
+				</div>
 				
-				&#160;*Indicates Required
-				Information
-			</xp:td>
-		</xp:tr>
-		<xp:td
-			style="background-color:rgb(220,220,220);font-size:9pt;width:166.0px;font-family:Verdana">
-			&#160;
-			<xp:span style="font-weight:bold;font-family:Verdana" />
-			<xp:span style="font-weight:bold;font-family:Verdana" />
+				<div class="form-group">
+					<label for="firstName">Firstname *</label>
+					<xp:inputText value="#{EmailValidator.firstName}" id="firstName"
+						required="true" disableClientSideValidation="true">
+						<xp:this.validators>
+							<xp:validateRequired message="Enter First Name" />
+						</xp:this.validators>
+					</xp:inputText>
+					<xp:message for="firstName" />
+				</div>			
+				
+				<div class="form-group">
+					<label for="emailAddress1">E-Mail Address *</label>
+					<xp:inputText id="emailAddress1" 
+						required="true" value="#{EmailValidator.emailAddress}"
+						disableClientSideValidation="true">
+						<xp:this.validators>
+							<!--
+								<xp:validateConstraint message="Please enter in
+								'you@yourcompany.com' format" loaded="false">
+								<xp:this.regex><![CDATA[^[A-Za-z0-9._%-]*@[A-Za-z0-9]*.[A-Za-z]{2,4}]]></xp:this.regex>
+								</xp:validateConstraint>
+							-->
+							<xp:validator validatorId="EmailValidator" />
+							<xp:validateRequired message="Enter E-Mail address" />
+						</xp:this.validators>
+					</xp:inputText>
+					<xp:message for="emailAddress1" />
+				</div>
+				
+				
+				<div class="form-group">
+					<label for="emailConfirm1">Confirm E-Mail *</label>
+					<xp:inputText id="emailConfirm1" 
+						required="true" value="#{EmailValidator.emailConfirm}"
+						disableClientSideValidation="true">
+						<xp:this.validators>
+							<!--
+								<xp:validateConstraint message="Please enter in
+								'you@yourcompany.com' format">
+								<xp:this.regex><![CDATA[^[A-Za-z0-9._%-]*@[A-Za-z0-9]*.[A-Za-z]{2,4}]]></xp:this.regex>
+								</xp:validateConstraint>
+							-->
+							<xp:validator validatorId="EmailValidator" />
+							<xp:validateRequired message="Confirm E-Mail address" />
+						</xp:this.validators>
+					</xp:inputText>
+					<xp:message for="emailConfirm1" />
+				</div>
 
-			&#160;&#160;&#160;
-			<xp:br />
-			<xp:br style="font-family:Verdana" />
+				<xp:button value="Validate" id="btnSubmit"
+					styleClass="btn-primary">
+					<xp:eventHandler event="onclick" submit="true"
+						refreshMode="complete" immediate="false" save="true" />
+				</xp:button>
+			</div>			
+			
 
-			&#160;&#160;&#160;
-			<xp:label value="Last Name *" id="label1" for="lastName1" />
-			<xp:br />
-			&#160;&#160;
-			<xp:inputText value="#{EmailValidator.lastName}" id="lastName1"
-				required="true" disableClientSideValidation="true" style="width:118.0px">
-				<xp:this.validators>
-					<xp:validateRequired message="Enter Last Name" />
-				</xp:this.validators>
-			</xp:inputText>
-			<xp:br />
-			&#160;&#160;
-			<xp:message for="firstName1" />
-		</xp:td>
-		<xp:td style="background-color:rgb(220,220,220);font-size:9pt;width:163.0px">
-			&#160;&#160;&#160;
-			<xp:br />
-			<xp:br />
-			&#160;
-			<xp:label value="First Name *" id="label2" for="firstName1" />
-
-			&#160;&#160;
-			<xp:inputText value="#{EmailValidator.firstName}"
-				id="firstName1" required="true" disableClientSideValidation="true"
-				style="width:118.0px">
-				<xp:this.validators>
-					<xp:validateRequired message="Enter First Name" />
-				</xp:this.validators>
-			</xp:inputText>
-			<xp:br />
-			&#160;&#160;
-			<xp:message for="firstName1" />
-		</xp:td>
-
-
-
-
-
-	</xp:tr>
-	<xp:tr>
-		<xp:td colspan="2" style="background-color:rgb(220,220,220);font-size:9pt">
-			&#160;&#160;&#160;
-			<xp:label value="E-Mail Address *" id="emailAddress_Label1"
-				for="emailAddress1" />
-			<xp:br id="br16" />
-			&#160;&#160;
-			<xp:inputText id="emailAddress1" style="width:275.0px"
-				required="true" value="#{EmailValidator.emailAddress}"
-				disableClientSideValidation="true">
-				<xp:message for="emailAddress1" />
-
-				<xp:this.validators>
-					<!--
-						<xp:validateConstraint message="Please enter in
-						'you@yourcompany.com' format" loaded="false">
-						<xp:this.regex><![CDATA[^[A-Za-z0-9._%-]*@[A-Za-z0-9]*.[A-Za-z]{2,4}]]></xp:this.regex>
-						</xp:validateConstraint>
-					-->
-
-					<xp:validator validatorId="EmailValidator" />
-
-
-
-					<xp:validateRequired message="Enter E-Mail address" />
-				</xp:this.validators>
-			</xp:inputText>
-			<xp:br />
-			&#160;&#160;
-			<xp:message for="emailAddress1" />
-			<xp:br />
-			&#160;&#160;&#160;
-			<xp:label value="Confirm E-Mail *)" id="label5" for="emailConfirm1" />
-			<xp:br id="br1" />
-			&#160;&#160;
-			<xp:inputText id="emailConfirm1" style="width:275.0px"
-				required="true" value="#{EmailValidator.emailConfirm}"
-				disableClientSideValidation="true">
-
-
-				<xp:this.validators>
-					<!--
-						<xp:validateConstraint message="Please enter in
-						'you@yourcompany.com' format">
-						<xp:this.regex><![CDATA[^[A-Za-z0-9._%-]*@[A-Za-z0-9]*.[A-Za-z]{2,4}]]></xp:this.regex>
-						</xp:validateConstraint>
-					-->
-
-					<xp:validator validatorId="EmailValidator" />
-
-
-					<xp:validateRequired message="Confirm E-Mail address" />
-
-				</xp:this.validators>
-			</xp:inputText>
-			<xp:br />
-			&#160;&#160;
-			<xp:message for="emailConfirm1" />
-		</xp:td>
-	</xp:tr>
-	<xp:button value="Submit" id="btnSubmit">
-		<xp:eventHandler event="onclick" submit="true"
-			refreshMode="complete" immediate="false" save="true" />
-	</xp:button>
-</xp:view>
+		</xp:panel>
+	</xc:ccLayout></xp:view>

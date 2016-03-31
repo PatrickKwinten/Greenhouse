@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core"
+	xmlns:xe="http://www.ibm.com/xsp/coreex">
+
+	
+	<xe:navigator id="navigator1" expandable="true"
+		expandEffect="wipe">
+		<xe:this.treeNodes>
+			<xe:pageTreeNode page="/bootstrapselect.xsp"
+				title="Bootstrap Select">
+			</xe:pageTreeNode>
+
+
+			<xe:basicContainerNode label="Validation">
+				<xe:this.children>
+					<xe:pageTreeNode label="Email"
+						page="/EmailValidator.xsp">
+					</xe:pageTreeNode>
+					<xe:pageTreeNode
+						page="/Validators.xsp" label="Validators">
+					</xe:pageTreeNode>
+				</xe:this.children>
+			</xe:basicContainerNode>
+		</xe:this.treeNodes>
+	</xe:navigator></xp:view>
