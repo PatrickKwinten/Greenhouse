@@ -1,21 +1,25 @@
-<?xml version='1.0' encoding='utf-8'?>
-<note class='view' xmlns='http://www.lotus.com/dxl' version='9.0' maintenanceversion='1.5'
- replicaid='C1257F8600412248'>
-<noteinfo noteid='18e' unid='FC1C2C2419DE9DDFC1257F8600433F16' sequence='4'>
-<created><datetime dst='true'>20160330T141430,62+02</datetime></created>
-<modified><datetime dst='true'>20160330T141911,72+02</datetime></modified>
-<revised><datetime dst='true'>20160330T141911,71+02</datetime></revised>
-<lastaccessed><datetime dst='true'>20160330T141911,72+02</datetime></lastaccessed>
-<addedtofile><datetime dst='true'>20160330T141430,65+02</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Patrick Kwinten/O=quintessens</name></updatedby>
-<wassignedby><name>CN=Patrick Kwinten/O=quintessens</name></wassignedby>
-<item name='$TYPE'><text>$SUBVIEW</text></item>
-<item name='$TABLEFORMAT' sign='true'><text>LastName\Last Name:15;FirstName\First Name:15;PhoneNumber\Phone Number:15</text></item>
-<item name='$LANGUAGE' sign='true'><text>en</text></item>
-<item name='$FormulaClass' sign='true'><text>1</text></item>
-<item name='$TITLE' sign='true'><text>_People|People</text></item>
-<item name='$Index' sign='true'><text>/C</text></item>
-<item name='$Formula' sign='true'><formula compiled='true'>
+<?xml version="1.0" encoding="UTF-8"?>
+<note xmlns="http://www.lotus.com/dxl" class="view">
+  <item name="$TYPE">
+    <text>$SUBVIEW</text>
+  </item>
+  <item name="$TABLEFORMAT" sign="true">
+    <text>LastName\Last Name:15;FirstName\First Name:15;PhoneNumber\Phone Number:15</text>
+  </item>
+  <item name="$LANGUAGE" sign="true">
+    <text>en</text>
+  </item>
+  <item name="$FormulaClass" sign="true">
+    <text>1</text>
+  </item>
+  <item name="$TITLE" sign="true">
+    <text>_People|People</text>
+  </item>
+  <item name="$Index" sign="true">
+    <text>/C</text>
+  </item>
+  <item name="$Formula" sign="true">
+    <formula compiled="true">
 EgYCAKAAAwAkMTgABQALAFJvYW1pbmdVc2VyAGgBrwCAAG4ABQALAFJvYW1pbmdVc2VyAAEAAQAx
 AAoCrwBOABAAAAAAAAAAAIBRQK4APgAFAAsAUm9hbWluZ1VzZXIAAQABADIACgKvACIAEAAAAAAA
 AAAAwFNArgASAAAAAAAAAAAAAACuAAQAtQWuABIAAAAAAAAAAAAAAK4ABAC1AwMAAQCAABoARGlz
@@ -44,47 +48,65 @@ AAAFAAgAZnVsbG5hbWUAAAAAAAAAAPA/awK0AgMAAgAkAAQAbmFtZQIABgAAAAAAAAAFAAgARnVs
 bE5hbWW0AgMABQBaAFUACwADAAQAAwALAAMAAwADAAwABAAJAAQAJDE4bmFtZSQxMkNvbXBhbnlO
 YW1lam9iJDE2JDIxU2FtZXRpbWVJbmZvbmFtZSRDb25mbGljdCRSRUYABAAEAAAAGgAFAAQAVHlw
 ZQEABgBQZXJzb24KAgMA
-</formula></item>
-<item name='$Collation' summary='true'>
-<rawitemdata type='2'>
+</formula>
+  </item>
+  <item name="$Collation" summary="true">
+    <rawitemdata type="2">
 LQADAABECGYAAAAEAABmAAQACwAAZgAPAAMAbmFtZUNvbXBhbnlOYW1lam9i
-</rawitemdata></item>
-<item name='$Collation1' summary='true'>
-<rawitemdata type='2'>
+</rawitemdata>
+  </item>
+  <item name="$Collation1" summary="true">
+    <rawitemdata type="2">
 EQABAABECGYAAAAEAG5hbWU=
-</rawitemdata></item>
-<item name='$Collation2' summary='true'>
-<rawitemdata type='2'>
+</rawitemdata>
+  </item>
+  <item name="$Collation2" summary="true">
+    <rawitemdata type="2">
 EQABAABECWYAAAAEAG5hbWU=
-</rawitemdata></item>
-<item name='$Collation3' summary='true'>
-<rawitemdata type='2'>
+</rawitemdata>
+  </item>
+  <item name="$Collation3" summary="true">
+    <rawitemdata type="2">
 IwACAABEAGYAAAALAAhmAAsABABDb21wYW55TmFtZW5hbWU=
-</rawitemdata></item>
-<item name='$Collation4' summary='true'>
-<rawitemdata type='2'>
+</rawitemdata>
+  </item>
+  <item name="$Collation4" summary="true">
+    <rawitemdata type="2">
 IwACAABEAWYAAAALAAhmAAsABABDb21wYW55TmFtZW5hbWU=
-</rawitemdata></item>
-<item name='$Collation5' summary='true'>
-<rawitemdata type='2'>
+</rawitemdata>
+  </item>
+  <item name="$Collation5" summary="true">
+    <rawitemdata type="2">
 EAABAABEAGYAAAADAGpvYg==
-</rawitemdata></item>
-<item name='$Collation6' summary='true'>
-<rawitemdata type='2'>
+</rawitemdata>
+  </item>
+  <item name="$Collation6" summary="true">
+    <rawitemdata type="2">
 EAABAABEAWYAAAADAGpvYg==
-</rawitemdata></item>
-<item name='$Collation7' summary='true'>
-<rawitemdata type='2'>
+</rawitemdata>
+  </item>
+  <item name="$Collation7" summary="true">
+    <rawitemdata type="2">
 GwACAABEgGYAAAADAAhmAAMABAAkMjFuYW1l
-</rawitemdata></item>
-<item name='$FormFormula' summary='true' sign='true'><formula>@If(@TextToNumber(@Version) &lt; 159; "(46Person)";Form)</formula></item>
-<item name='$AppHelpFormula' summary='true' sign='true'><formula>@Command([OpenHelpDocument];[AdminHelp];"(Help)";"pubnames_v_People")</formula></item>
-<item name='$Comment' sign='true'><text>From FakeNames</text></item>
-<item name='$Flags'><text/></item>
-<item name='$WebFlags'><text>SA</text></item>
-<item name='$DesignerVersion'><text>8.5.3</text></item>
-<item name='$VIEWFORMAT' sign='true'>
-<rawitemdata type='5'>
+</rawitemdata>
+  </item>
+  <item name="$FormFormula" summary="true" sign="true">
+    <formula>@If(@TextToNumber(@Version) &lt; 159; "(46Person)";Form)</formula>
+  </item>
+  <item name="$AppHelpFormula" summary="true" sign="true">
+    <formula>@Command([OpenHelpDocument];[AdminHelp];"(Help)";"pubnames_v_People")</formula>
+  </item>
+  <item name="$Comment" sign="true">
+    <text>From FakeNames</text>
+  </item>
+  <item name="$Flags">
+    <text/>
+  </item>
+  <item name="$WebFlags">
+    <text>SA</text>
+  </item>
+  <item name="$VIEWFORMAT" sign="true">
+    <rawitemdata type="5">
 AQAJABgAiEgAAFZDwAADAAAA2AAAABAAAQAACQAAAAAIAAAAAAICAAAAVkMBAwQABACiAQAAmQAB
 AAAJgCEAAAgAAAAAAgIAAABWQwAAAwAJAE4CAACAAAEAAAkAIAIAAAAAAAAAAgAAQFZDARMLAAcA
 JgAAAIoAAQAACQAgAAAAAAAAAAICAAAAVkMBAwMABQAaAAAAigABAAAJACAAAAAAAAAAAgIAAABW
@@ -141,9 +163,10 @@ AAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAuLCRgQygAAwAAAAwAAAAAAAAAAAAAAAAAAAAA
 AAAAU2FtZXRpbWVJbmZvYUNmAAAAAAAAAAAAEQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJExhc3ROYW1lU29ydGVk
 PTQAAAA=
-</rawitemdata></item>
-<item name='$V5ACTIONS' sign='true'>
-<rawitemdata type='1'>
+</rawitemdata>
+  </item>
+  <item name="$V5ACTIONS" sign="true">
+    <rawitemdata type="1">
 vRzYAAAAAwABAAAAhSAAAAAAAAAAAAAACAAGAHn/bAABALGx0gABAAAAAAABAAAAAAABALGx0gAA
 AB8AAAAAAAAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAPz/OgAAAAAAAQAAAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -659,9 +682,10 @@ c2VfV0NUX0lNfAEBAAEAMQAKAhwCAQAJAFVTRV9TVF9JTQB8AQEAAQAxAAsCHAIEAK8AIgAQAAAA
 AAAAAAAAAACuABIAAAAAAAAAAADwP64ABAC1BQMABwA0AC0ACTFTMlM4UzlTMTFTMTNTMTVTMTZT
 MjBTMjFTMjJTMjNTMjdTMjhTMzFTMzNTAAAALgAFAAgAT2tUb1Nob3cAAAAAAAAAAPA/CwIFAAgA
 T2tUb1Nob3daAR0CAwAHABIACwAJMFIxUzJTM1M0UwA=
-</rawitemdata></item>
-<item name='$ACTIONS' sign='true'>
-<rawitemdata type='1'>
+</rawitemdata>
+  </item>
+  <item name="$ACTIONS" sign="true">
+    <rawitemdata type="1">
 vRzYAAAAAwABAAAAhSAAAAAAAAAAAAAACAAGAL7/aAEAAAEAAACeQRAACgAAAAAAAABBZGQgUGVy
 c29uSAEBACQADQBDdXJyZW50U2VydmVyAIsAAAAAAAAAAADwP2sCAwAHAAwABQAJMFMwRQAAAPgA
 BQANAEN1cnJlbnRTZXJ2ZXIAAQAAAAoCAQANAFtVc2VyQ3JlYXRvcl0A5wB0Ah0CrwDAAFYAvwBY
@@ -1160,9 +1184,10 @@ CgIcAgEACQBVU0VfU1RfSU0AfAEBAAEAMQALAhwCBACvACIAEAAAAAAAAAAAAAAArgASAAAAAAAA
 AAAA8D+uAAQAtQUDAAcANAAtAAkxUzJTOFM5UzExUzEzUzE1UzE2UzIwUzIxUzIyUzIzUzI3UzI4
 UzMxUzMzUwAAAC4ABQAIAE9rVG9TaG93AAAAAAAAAADwPwsCBQAIAE9rVG9TaG93WgEdAgMABwAS
 AAsACTBSMVMyUzNTNFMA
-</rawitemdata></item>
-<item name='$SCRIPTOBJ_18' sign='true'>
-<rawitemdata type='14'>
+</rawitemdata>
+  </item>
+  <item name="$SCRIPTOBJ_18" sign="true">
+    <rawitemdata type="14">
 AQAAAkxTT0IDABQIZW4AAAQALQBDAQQAAABwCbAEAAAAAAAA3AKwBgAAAAAoAKAAHAA8AAACvAAA
 AAAAAAAAAAIAAAAEAFgBAAAAAFgBWAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAABAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -1243,5 +1268,6 @@ phowAF6QBku8BS2oCCOmGjMAhUscBS0YCCOVlV6IB3GIBxo0AF6gBkscBSzMCCOmGjUAG0qgBoHF
 oDg6ABo2AFgDNACVb4gHS6AGU/wIhSWlGjcAYgM0AFgDNACJqKcDGjgAXqAGSxwFLAgJSqAGI6Ya
 OQA6vP8aOwBeeAdLkAYsPAl9oAReiAcjpho9ABwaPwAdAgAAABEAGAAAAAAA//8BAAMAAwAAAAYA
 pAAIAAQBDwAKAAAAbQ==
-</rawitemdata></item></note>
-
+</rawitemdata>
+  </item>
+</note>
