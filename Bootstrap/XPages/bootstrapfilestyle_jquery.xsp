@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom" xmlns:xe="http://www.ibm.com/xsp/coreex">
+	<xp:this.resources>
+		<xp:script 
+			src="/common.js" 
+			clientSide="true" />
+	</xp:this.resources>
+	
+	<xc:bootstrapfilestyle_resources />
+	<xp:scriptBlock id="initScript">
+		<xp:this.value>
+			<![CDATA[$(document).ready( 
+	function() {
+		$('input[type=file]').filestyle({
+			buttonName: 'btn-primary',
+			placeholder: 'No file',
+			iconName: 'glyphicon glyphicon-upload'
+		});
+	}
+);]]>
+		</xp:this.value>
+	</xp:scriptBlock>
+
+	<h2>Bootstrap FileStyle</h2>
+	<h4>Bootstrap FileStyle is a quick and simple plugin to help
+		style your form's file upload inputs.</h4>
+	<xp:br />
+	<xp:fileUpload id="fileUpload" />
+	<xe:applicationLayout id="applicationLayout1">
+		<xe:this.configuration>
+			<xe:bootstrapResponsiveConfiguration></xe:bootstrapResponsiveConfiguration>
+		</xe:this.configuration>
+	</xe:applicationLayout>
+</xp:view>
