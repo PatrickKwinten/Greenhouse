@@ -1,0 +1,21 @@
+<!--
+	The default theme contents use theme inheritance.
+
+	Application themes can extend an existing global theme using the
+	extends attribute.  Existing themes include the following options:
+
+	1. webstandard 2. oneui 3. notes
+-->
+<theme extends="Bootstrap3_flat" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="platform:/plugin/com.ibm.designer.domino.stylekits/schema/stylekit.xsd" >
+	
+	<resource>
+	    <content-type>text/css</content-type>
+	    <href>font-awesome-4.4.0/css/font-awesome-fontFamily.css</href>
+	</resource>
+	<resource>
+		<content-type>text/css</content-type>
+		<href>font-awesome-4.4.0/css/font-awesome.min.css</href>
+	</resource>
+	
+
+</theme>

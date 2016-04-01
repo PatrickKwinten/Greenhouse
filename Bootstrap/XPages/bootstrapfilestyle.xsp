@@ -13,7 +13,7 @@
 			<xp:br />
 			<xp:fileUpload id="fileUpload" />
 
-			<script>$(":file").filestyle({buttonName: "btn-primary", placeholder: "No file", iconName: "glyphicon glyphicon-upload"});</script>
+			<script>$(":file").filestyle({buttonName: "btn-primary", placeholder: "No file", iconName: "fa fa-upload"});</script>
 
 		</xp:panel>
 	</xc:ccLayout>
