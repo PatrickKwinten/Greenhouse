@@ -6,6 +6,15 @@
 	<xe:navigator id="navigator1" expandable="true"
 		expandEffect="wipe">
 		<xe:this.treeNodes>
+			<xe:basicContainerNode label="Image Gallery">
+				<xe:this.children>
+					<xe:pageTreeNode label="blueimp"
+						page="/blueimpGallery.xsp">
+					</xe:pageTreeNode>
+					
+				</xe:this.children>
+			</xe:basicContainerNode>
+		
 			<xe:pageTreeNode page="/bootstrapselect.xsp"
 				title="Bootstrap Select">
 			</xe:pageTreeNode>
