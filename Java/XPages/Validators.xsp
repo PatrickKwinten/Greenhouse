@@ -122,6 +122,7 @@
 				</div>
 
 				<xp:button value="Validate" id="btnSubmit">
+				<i class="fa fa-check-square"></i>
 					<xp:eventHandler event="onclick" submit="true"
 						refreshMode="complete" immediate="false" save="true" />
 				</xp:button>
