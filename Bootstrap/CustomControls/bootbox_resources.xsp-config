@@ -5,16 +5,16 @@
     <default-prefix>xc</default-prefix>
   </faces-config-extension>
   <composite-component>
-    <component-type>bootstrapfilestyle_resources</component-type>
-    <composite-name>bootstrapfilestyle_resources</composite-name>
-    <composite-file>/bootstrapfilestyle_resources.xsp</composite-file>
+    <component-type>bootbox_resources</component-type>
+    <composite-name>bootbox_resources</composite-name>
+    <composite-file>/bootbox_resources.xsp</composite-file>
     <composite-extension>
       <designer-extension>
         <in-palette>true</in-palette>
         <render-markup>&lt;?xml version="1.0" encoding="UTF-8"?&gt; &#xd;
 &lt;xp:view xmlns:xp="http://www.ibm.com/xsp/core"&gt; &#xd;
 &lt;xp:panel style="border: 2 pix gray dotted;padding:3px;margin:1px;"&gt; &#xd;
-bootstrapfilestyle_resources&#xd;
+bootbox_resources&#xd;
 &lt;/xp:panel&gt; &#xd;
 &lt;/xp:view&gt;</render-markup>
       </designer-extension>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core"
+	xmlns:xc="http://www.ibm.com/xsp/custom">
+	
+	
+
+	<xc:bootbox_resources></xc:bootbox_resources>
+	<xc:ccLayout><xp:this.facets>
+	<xc:ccMenuPlugins xp:key="LeftColumn"></xc:ccMenuPlugins></xp:this.facets>
+		<xp:panel>
+		<xp:button value="Bootbox Dialog" id="button1" styleClass="btn btn-success">
+	<xp:eventHandler event="onclick" submit="false">
+		<xp:this.script><![CDATA[bootbox.dialog({
+		message: "Bootbox setup using a custom dialog",
+  		title: "Bootbox Dialog Box",
+  		buttons: {
+    		success: {
+      		label: "Button Success!",
+      		className: "btn-success",
+      		callback: function() {}
+    		},
+    		danger: {
+      		label: "Button Danger!",
+      		className: "btn-danger",
+      		callback: function() {}
+    		},
+    		main: {
+      		label: "Button Primary",
+      		className: "btn-primary",
+      		callback: function() {}
+    		},    			
+  		}  				
+		});]]></xp:this.script>
+	</xp:eventHandler></xp:button>		
+<br /><br />
+<xp:button value="Bootbox Dialog Options" id="button2" styleClass="btn btn-primary">
+	<xp:eventHandler event="onclick" submit="false">
+		<xp:this.script><![CDATA[bootbox.dialog({
+  		message: "Bootbox Dialog Options with some other Options",
+  		title: "Bootbox Dialog Options",
+  		onEscape: function() {},
+  		closeButton: true,
+  		backdrop: true,
+  		buttons: {
+  		success: {
+  		label: "OK",
+  		className: "btn-success",
+  		callback: function() {}
+  		},
+  		primary: {
+  		label: "Cancel",
+  		className: "btn-primary",
+  		callback: function() {}
+  		}
+  		}
+  		});]]>
+		</xp:this.script>
+	</xp:eventHandler></xp:button>
+		
+		</xp:panel></xc:ccLayout></xp:view>

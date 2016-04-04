@@ -14,6 +14,15 @@
 					
 				</xe:this.children>
 			</xe:basicContainerNode>
+			
+			<xe:basicContainerNode label="Dialogs">
+				<xe:this.children>
+					<xe:pageTreeNode label="Bootbox"
+						page="/bootbox.xsp">
+					</xe:pageTreeNode>
+					
+				</xe:this.children>
+			</xe:basicContainerNode>
 		
 			<xe:pageTreeNode page="/bootstrapselect.xsp"
 				title="Bootstrap Select">

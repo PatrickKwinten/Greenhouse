@@ -11,6 +11,7 @@
     <composite-extension>
       <designer-extension>
         <in-palette>true</in-palette>
+        <render-markup/>
       </designer-extension>
     </composite-extension>
   </composite-component>

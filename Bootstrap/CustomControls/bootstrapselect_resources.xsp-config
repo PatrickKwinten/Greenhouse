@@ -11,6 +11,12 @@
     <composite-extension>
       <designer-extension>
         <in-palette>true</in-palette>
+        <render-markup>&lt;?xml version="1.0" encoding="UTF-8"?&gt; &#xd;
+&lt;xp:view xmlns:xp="http://www.ibm.com/xsp/core"&gt; &#xd;
+&lt;xp:panel style="border: 2 pix gray dotted;padding:3px;margin:1px;"&gt; &#xd;
+bootstrapselect_resources&#xd;
+&lt;/xp:panel&gt; &#xd;
+&lt;/xp:view&gt;</render-markup>
       </designer-extension>
     </composite-extension>
   </composite-component>
