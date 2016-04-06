@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom">
+
+	<xc:awesomebootstrapcheckbox_resources />
+	<xc:ccLayout>
+		<xp:panel>
+
+<h2>Awesome Bootstrap Checkbox</h2>
+		<h4>Pure CSS to give checkboxes and Radio Buttons a Bootstrap look and feel.</h4>
+		<xp:table style="width:100.0%">
+		<xp:tr>
+		<xp:td>
+		<div class="checkbox">
+		<xp:checkBox id="checkBox3"></xp:checkBox>
+		<label for="checkBox3">
+		Checkbox Default
+		</label>
+		</div>
+		</xp:td>
+		<xp:td>
+		<div class="checkbox checkbox-circle">
+		<xp:checkBox id="checkBox2"></xp:checkBox>
+		<label for="checkBox2">
+		Checkbox Circle Default
+		</label>
+		</div>
+		</xp:td>
+		<xp:td>
+		<div class="checkbox">
+		<xp:checkBox id="checkBox9">
+		<xp:this.attrs>
+			<xp:attr name="disabled" value="disabled"
+			minimized="true">
+			</xp:attr>
+		</xp:this.attrs></xp:checkBox>
+		<label for="checkBox9">
+		Checkbox Disabled
+		</label>
+		</div>
+		</xp:td>
+		</xp:tr>
+		<xp:tr>
+		<xp:td>
+		<div class="checkbox checkbox-primary">
+		<xp:checkBox id="checkBox4"></xp:checkBox>
+		<label for="checkBox4">
+		Checkbox Primary
+		</label>
+		</div>
+		</xp:td>
+		<xp:td>
+		<div class="checkbox checkbox-info checkbox-circle">
+		<xp:checkBox id="checkBox6"></xp:checkBox>
+		<label for="checkBox6">
+		Checkbox Circle Info
+		</label>
+		</div>
+		</xp:td>
+		<xp:td>
+		<div class="checkbox checkbox-circle checkbox-primary">
+		<xp:checkBox id="checkBox10">
+		<xp:this.attrs>
+			<xp:attr name="checked" value="checked"
+			minimized="true">
+			</xp:attr>
+		</xp:this.attrs></xp:checkBox>
+		<label for="checkBox10">
+		Checkbox Circle Checked
+		</label>
+		</div>
+		</xp:td>
+		</xp:tr>
+		<xp:tr>
+		<xp:td>
+		<div class="checkbox checkbox-success">
+		<xp:checkBox id="checkBox5"></xp:checkBox>
+		<label for="checkBox5">
+		Checkbox Success
+		</label>
+		</div>
+		</xp:td>
+		<xp:td>
+		<div class="checkbox checkbox-warning checkbox-circle">
+		<xp:checkBox id="checkBox7"></xp:checkBox>
+		<label for="checkBox7">
+		Checkbox Circle Warning
+		</label>
+		</div>
+		</xp:td>
+		<xp:td>
+		<div class="checkbox checkbox-circle checkbox-danger">
+		<xp:checkBox id="checkBox11">
+			<xp:this.attrs>
+			<xp:attr name="checked" value="checked"
+			minimized="true">
+			</xp:attr>
+			<xp:attr name="disabled" value="disabled"
+			minimized="true">
+			</xp:attr>
+		</xp:this.attrs></xp:checkBox>
+		<label for="checkBox11">
+		Checkbox Disabled Checked
+		</label>
+		</div>
+		</xp:td>
+		</xp:tr>
+		<xp:tr>
+		<xp:td>
+		<div class="checkbox checkbox-danger">
+		<xp:checkBox id="checkBox1"></xp:checkBox>
+		<label for="checkBox1">
+		Checkbox Danger
+		</label>
+		</div>
+		</xp:td>
+		<xp:td>
+		<div class="checkbox checkbox-primary checkbox-circle">
+		<xp:checkBox id="checkBox8"></xp:checkBox>
+		<label for="checkBox8">
+		Checkbox Circle Primary
+		</label>
+		</div>
+		</xp:td>
+		<xp:td></xp:td>
+		</xp:tr>
+		</xp:table> 
+
+		</xp:panel>
+	</xc:ccLayout>
+</xp:view>
