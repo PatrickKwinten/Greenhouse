@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core">
+<link href="bootstrap-switch/css/bootstrap3/bootstrap-switch.css" rel="stylesheet"></link>
+<script type="text/javascript" src="bootstrap-switch/js/bootstrap-switch.js" />
+</xp:view>

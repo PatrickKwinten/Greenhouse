@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core"
+	xmlns:xc="http://www.ibm.com/xsp/custom">
+
+	<xp:this.resources>
+<xp:script src="/common.js" clientSide="true"></xp:script>
+</xp:this.resources>
+<xc:bootstrapTouchspin_resources></xc:bootstrapTouchspin_resources>
+	<xp:scriptBlock id="scriptBlock1"> 
+<xp:this.value><![CDATA[
+$(document).ready(
+function() {
+x$( "#{id:inputText1}" ).TouchSpin({
+min: 0,
+max: 100,
+step: 1,
+decimals: 2,
+boostat: 5,
+maxboostedstep: 10,
+postfix: '%'
+});
+});
+]]></xp:this.value>   
+</xp:scriptBlock>
+
+	<xc:ccLayout>
+		<xp:panel>
+		<h1>Plugins</h1>
+		<h3>Touchspin</h3>
+		<p>A mobile and touch friendly input spinner component for Bootstrap 3. Available at: https://github.com/istvan-ujjmeszaros/bootstrap-touchspin</p>
+			<xp:inputText id="inputText1">
+				<xp:this.attrs>
+					<xp:attr name="value" value="55"></xp:attr>
+				</xp:this.attrs>
+			</xp:inputText></xp:panel>
+		<xp:this.facets>
+	<xc:ccMenuPlugins xp:key="LeftColumn"></xc:ccMenuPlugins></xp:this.facets></xc:ccLayout></xp:view>

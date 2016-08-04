@@ -11,22 +11,20 @@
 					<xe:pageTreeNode label="blueimp"
 						page="/blueimpGallery.xsp">
 					</xe:pageTreeNode>
-					
+
 				</xe:this.children>
 			</xe:basicContainerNode>
-			
+
 			<xe:basicContainerNode label="Dialogs">
 				<xe:this.children>
 					<xe:pageTreeNode label="Bootbox"
 						page="/bootbox.xsp">
 					</xe:pageTreeNode>
-					
+
 				</xe:this.children>
 			</xe:basicContainerNode>
-		
-			<xe:pageTreeNode page="/bootstrapselect.xsp"
-				title="Bootstrap Select">
-			</xe:pageTreeNode>
+
+
 
 
 			<xe:basicContainerNode label="Filestyle">
@@ -36,6 +34,20 @@
 					</xe:pageTreeNode>
 					<xe:pageTreeNode
 						page="/bootstrapfilestyle_jquery.xsp" label="jQuery">
+					</xe:pageTreeNode>
+				</xe:this.children>
+			</xe:basicContainerNode>
+			<xe:basicContainerNode label="Form utilities">
+				<xe:this.children>
+					<xe:pageTreeNode label=" Select"
+						page="/bootstrapselect.xsp">
+					</xe:pageTreeNode>
+					<xe:pageTreeNode label="Touchspin"
+						page="/Touchspin.xsp">
+					</xe:pageTreeNode>
+
+					<xe:pageTreeNode label="Bootstrap Switch"
+						page="/flipswitch.xsp">
 					</xe:pageTreeNode>
 				</xe:this.children>
 			</xe:basicContainerNode>

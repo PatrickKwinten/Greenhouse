@@ -1,13 +1,14 @@
 <?xml version='1.0' encoding='utf-8'?>
 <note default='true' class='icon' xmlns='http://www.lotus.com/dxl' version='9.0'
- maintenanceversion='1.5' replicaid='C1257F860035C1BB'>
-<noteinfo noteid='11a' unid='9D09D922341E4AA5C1257F860035C1C0' sequence='3'>
-<created><datetime dst='true'>20160330T114710,08+02</datetime></created>
-<modified><datetime dst='true'>20160330T114710,15+02</datetime></modified>
-<revised><datetime dst='true'>20160330T114710,14+02</datetime></revised>
-<lastaccessed><datetime dst='true'>20160330T114710,15+02</datetime></lastaccessed>
-<addedtofile><datetime dst='true'>20160330T114710,11+02</datetime></addedtofile></noteinfo>
+ maintenanceversion='1.5' replicaid='C1258005004FC87F'>
+<noteinfo noteid='11a' unid='29294452E2256281C1258005004FC884' sequence='10'>
+<created><datetime dst='true'>20160804T163126,76+02</datetime></created>
+<modified><datetime dst='true'>20160804T163848,45+02</datetime></modified>
+<revised><datetime dst='true'>20160804T163848,44+02</datetime></revised>
+<lastaccessed><datetime dst='true'>20160804T163848,45+02</datetime></lastaccessed>
+<addedtofile><datetime dst='true'>20160804T163126,80+02</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Patrick Kwinten/O=quintessens</name></updatedby>
+<wassignedby><name>CN=Patrick Kwinten/O=quintessens</name></wassignedby>
 <item name='IconBitmap' summary='true'>
 <rawitemdata type='6'>
 AiAgAQAA///////wD///4Af//8AD//4AAH/8AAA/+AAAH/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAA
@@ -23,7 +24,10 @@ d30fAAAAAPHXd33Xd3d913d9HwAAAADx13d913d3fdd3fR8AAAAA8R3d0dd3d30d3dEfAAAAAA8R
 EREdd3fRERER8AAAAAAA////Ed3dEf///wAAAAAAAAAAAPERER8AAAAAAAAAAAAAAAAP///wAAAA
 AAAAUEECICABAAD/////+A4DgA==
 </rawitemdata></item>
-<item name='$Flags'><text>J</text></item>
 <item name='$Daos'><text>0</text></item>
-<item name='$TITLE'><text>GreenHouseBootstrap</text></item></note>
+<item name='$TITLE'><text>GreenHouseBootstrap</text></item>
+<item name='$DefaultXPage'><text>home.xsp</text></item>
+<item name='$Flags'><text>J!</text></item>
+<item name='$LaunchXPageRunOnServer'><text>0</text></item>
+<item name='$FlagsNoRefresh'><text>rv</text></item></note>
 

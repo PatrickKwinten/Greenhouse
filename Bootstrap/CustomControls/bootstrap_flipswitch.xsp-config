@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config>
+  <faces-config-extension>
+    <namespace-uri>http://www.ibm.com/xsp/custom</namespace-uri>
+    <default-prefix>xc</default-prefix>
+  </faces-config-extension>
+  <composite-component>
+    <component-type>bootstrap_flipswitch</component-type>
+    <composite-name>bootstrap_flipswitch</composite-name>
+    <composite-file>/bootstrap_flipswitch.xsp</composite-file>
+    <composite-extension>
+      <designer-extension>
+        <in-palette>true</in-palette>
+        <render-markup>&lt;?xml version="1.0" encoding="UTF-8"?&gt; &#xd;
+&lt;xp:view xmlns:xp="http://www.ibm.com/xsp/core"&gt; &#xd;
+&lt;xp:panel style="border: 2 pix gray dotted;padding:3px;margin:1px;"&gt; &#xd;
+bootstrap-flipswitch_resources&#xd;
+&lt;/xp:panel&gt; &#xd;
+&lt;/xp:view&gt;</render-markup>
+      </designer-extension>
+    </composite-extension>
+  </composite-component>
+</faces-config>

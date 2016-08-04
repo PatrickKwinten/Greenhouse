@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core"
+	xmlns:xc="http://www.ibm.com/xsp/custom">
+	<xp:this.resources>
+		<xp:script src="/common.js" clientSide="true"></xp:script>
+			</xp:this.resources>
+	<xc:bootstrap_flipswitch></xc:bootstrap_flipswitch>
+	
+	
+	<xc:ccLayout>
+		<xp:panel>
+		<h1>Plugins</h1>
+		<h3>Bootstrap Switch</h3>
+		<p>Turn checkboxes and radio buttons in toggle switches. http://www.bootstrap-switch.org/</p>
+			<xp:checkBox id="checkBox1" defaultChecked="true"></xp:checkBox>
+			<xp:scriptBlock id="scriptBlock1"
+				value="x$('#{id:checkBox1}').bootstrapSwitch();">
+
+			</xp:scriptBlock></xp:panel>
+		<xp:this.facets>
+	<xc:ccMenuPlugins xp:key="LeftColumn"></xc:ccMenuPlugins></xp:this.facets></xc:ccLayout></xp:view>
