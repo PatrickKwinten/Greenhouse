@@ -30,9 +30,9 @@
 				legalText="(c) 2016 Patrick Kwinten"
 				placeBarName="Greenhouse - Bootstrap">
 				<xe:this.bannerApplicationLinks>
-					<xe:basicLeafNode label="Home" selected="true"
-						href="/">
-					</xe:basicLeafNode>
+					<xe:pageTreeNode label="Home" page="/home.xsp"></xe:pageTreeNode>
+					
+
 					<xe:basicContainerNode label="Goto...">
 						<xe:this.children>
 							<xe:basicLeafNode label="Goto Home"
@@ -43,6 +43,7 @@
 							</xe:basicLeafNode>
 						</xe:this.children>
 					</xe:basicContainerNode>
+
 				</xe:this.bannerApplicationLinks>
 				<xe:this.bannerUtilityLinks>
 					<xe:basicContainerNode
@@ -74,11 +75,11 @@
 					<xe:pageTreeNode page="/plugins.xsp"
 						selection="/Domino/.*" label="Plugins">
 					</xe:pageTreeNode>
-					
-					
-					
-					
-					
+
+
+
+
+
 				</xe:this.titleBarTabs>
 				<xe:this.placeBarActions>
 					<xe:pageTreeNode page="/home.xsp" label="Home">

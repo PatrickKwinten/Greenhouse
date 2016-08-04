@@ -2,4 +2,6 @@
 <xp:view xmlns:xp="http://www.ibm.com/xsp/core"
 	xmlns:xc="http://www.ibm.com/xsp/custom">
 
-	<xc:ccLayout></xc:ccLayout></xp:view>
+	<xc:ccLayout><xp:this.facets>
+	<xc:ccMenuPlugins xp:key="LeftColumn"></xc:ccMenuPlugins>
+</xp:this.facets></xc:ccLayout></xp:view>
