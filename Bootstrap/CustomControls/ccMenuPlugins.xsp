@@ -49,6 +49,9 @@
 					<xe:pageTreeNode label="Bootstrap Switch"
 						page="/flipswitch.xsp">
 					</xe:pageTreeNode>
+					<xe:pageTreeNode label="Chosen"
+						page="/chosen.xsp">
+					</xe:pageTreeNode>
 				</xe:this.children>
 			</xe:basicContainerNode>
 		</xe:this.treeNodes>

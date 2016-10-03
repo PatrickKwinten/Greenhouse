@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom">
+	<xp:this.resources>
+		<xp:script src="/common.js" clientSide="true" />
+	</xp:this.resources>
+	<script type="text/javascript" src="chosen_v1.6.2/chosen.jquery.js" />
+	<link rel="stylesheet" href="chosen_v1.6.2/chosen.css" />
+	<xp:scriptBlock id="scriptBlock2">
+		<xp:this.value><![CDATA[
+$(document).ready(
+function() {
+x$( "#{id:comboBox1}" ).chosen({
+disable_search_threshold: 10,
+allow_single_deselect: true,
+width: "100% !important;"
+});
+}
+);
+]]></xp:this.value>
+	</xp:scriptBlock>
+	<xp:scriptBlock id="scriptBlock1">
+		<xp:this.value><![CDATA[
+$(document).ready(
+function() {
+x$( "#{id:listBox1}" ).chosen({
+allow_single_deselect: true ,
+max_selected_options: 2,
+width:"100% !important;"
+});
+}
+);
+]]></xp:this.value>
+	</xp:scriptBlock>
+	<xc:ccLayout><xp:this.facets>
+	<xc:ccMenuPlugins xp:key="LeftColumn"></xc:ccMenuPlugins></xp:this.facets>
+		<xp:panel>
+		
+					<h1>Chosen</h1>
+				
+				<h3>Combo</h3>
+				<div class="row">
+				<div class="col-md-3">
+					<xp:comboBox id="comboBox1">
+						<xp:this.attrs>
+							<xp:attr name="data-placeholder" value="Select a category...." />
+							<xp:attr name="no_results_text" value="No results found!" />
+
+						</xp:this.attrs>
+						<xp:selectItems>
+							<xp:this.value><![CDATA[#{javascript:var arr = new Array(""); 
+var res = ["Saab", "Volvo", "BMW"];
+var list = arr.concat(res);
+return list;}]]></xp:this.value>
+						</xp:selectItems>
+					</xp:comboBox>
+					</div>
+					</div>
+					<h3>Multiple</h3>
+					<p>Max 2 values:</p>
+					<div class="row">
+					<div class="col-md-3">
+					<xp:listBox id="listBox1" multiple="true">
+						<xp:this.attrs>
+							<xp:attr name="data-placeholder" value="Select a category..." />
+
+						</xp:this.attrs>
+						<xp:selectItems>
+							<xp:this.value><![CDATA[#{javascript:var list = ["Saab", "Volvo", "BMW", "VW"];
+return list;}]]></xp:this.value>
+						</xp:selectItems>
+					</xp:listBox>
+					</div>
+				</div>
+		</xp:panel>
+
+	</xc:ccLayout>
+</xp:view>
