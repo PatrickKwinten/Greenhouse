@@ -55,18 +55,6 @@
 				<xp:fileDownload rows="30" id="fileDownload1"
 					displayLastModified="true" value="#{document1.fileAttachment}" hideWhen="true" allowDelete="true">
 				</xp:fileDownload>
-				<xp:br></xp:br>
-				<xp:button value="Save" id="button1"
-					styleClass="btn btn-primary">
-					<xp:eventHandler event="onclick" submit="true"
-						refreshMode="complete">
-						<xp:this.action>
-							<xp:actionGroup>
-								<xp:saveDocument></xp:saveDocument>
-								<xp:openPage name="/FileInput.xsp"></xp:openPage>
-							</xp:actionGroup>
-						</xp:this.action>
-					</xp:eventHandler>
-				</xp:button>				
+								
 			</xp:panel>
 		</xp:panel></xc:ccLayout></xp:view>

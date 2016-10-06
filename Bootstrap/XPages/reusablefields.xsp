@@ -27,35 +27,11 @@
 				<xc:ccRBSRichText dataSource="#{document1}"
 					required="false" fieldLabel="Remarks" fieldName="Body">
 				</xc:ccRBSRichText>
-				<xp:br></xp:br>
 				<div class="col-sm-2">
 				</div>
 				<div class="col-sm-10">
-				<xp:button value="Save" id="button1"
-					styleClass="btn btn-primary" rendered="#{javascript:currentDocument.isEditable()}"><span class="glyphicon glyphicon-ok"></span>
-					<xp:eventHandler event="onclick" submit="true"
-						refreshMode="complete">
-						<xp:this.action>
-							<xp:actionGroup>
-								<xp:saveDocument></xp:saveDocument>
-								<xp:openPage
-									name="/home.xsp">
-								</xp:openPage>
-							</xp:actionGroup>
-						</xp:this.action>
-					</xp:eventHandler>
-				</xp:button>
-				<xp:button value="Cancel" id="button2"
-					styleClass="btn btn-default"
-					rendered="#{javascript:currentDocument.isEditable()}">
-					<span class="glyphicon glyphicon-remove"></span>
-					<xp:eventHandler event="onclick" submit="true"
-						refreshMode="complete">
-						<xp:this.action>
-							<xp:openPage name="/home.xsp"></xp:openPage>
-						</xp:this.action>
-					</xp:eventHandler>
-				</xp:button>
+				
+				
 				</div>				
 				</xp:panel>
 		</xp:panel></xc:ccLayout></xp:view>
