@@ -69,8 +69,8 @@
 					<xe:this.titleBarName>Application Name</xe:this.titleBarName>
 				-->
 				<xe:this.titleBarTabs>
-					<xe:pageTreeNode page="Core_Home"
-						selection="/Core/.*" label="Core">
+					<xe:pageTreeNode page="bootstrap.xsp"
+						selection="/Core/.*" label="Basic">
 					</xe:pageTreeNode>
 					<xe:pageTreeNode page="/plugins.xsp"
 						selection="/Domino/.*" label="Plugins">
