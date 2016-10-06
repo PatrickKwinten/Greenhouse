@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xe="http://www.ibm.com/xsp/coreex">
+	<xp:div>
+	<xp:this.styleClass><![CDATA[#{javascript:"form-group" + ( getComponent("inputText1").isValid() ? "" : " has-error" )}]]></xp:this.styleClass>
+	<xp:div styleClass="form-group">			
+		<xp:label styleClass="col-sm-2 control-label" for="inputText1"
+			value="${compositeData.fieldLabel}" />
+		<div class="col-sm-10">
+		<div class="input-group">
+			<span class="input-group-addon">
+				<xp:text escape="true" id="computedField2"
+					styleClass="${compositeData.faicon}" tagName="i">
+				</xp:text>				
+			</span>
+			<xp:inputText type="text" id="inputText1"
+				loaded="${!empty compositeData.placeholder}"
+				value="#{compositeData.dataSource[compositeData.fieldName]}"
+				required="${compositeData.required}">
+				<xp:this.attrs>
+					<xp:attr name="placeholder"
+						value="${compositeData.placeholder}">
+					</xp:attr>
+				</xp:this.attrs>
+				<xp:this.validators>
+					<xp:validateRequired
+						message="#{javascript:compositeData.fieldLabel + ' is required'}">
+					</xp:validateRequired>
+				</xp:this.validators>
+			</xp:inputText>
+		</div>
+		<xp:text escape="true" id="computedField3"
+			styleClass="help-block" value="${compositeData.helpText}">
+			<xp:this.rendered><![CDATA[#{javascript:getComponent("inputText1").isValid() && compositeData.helpText != null}]]></xp:this.rendered>
+		</xp:text>
+		<xp:message id="message1" for="inputText1"
+				styleClass="help-block">
+		</xp:message>
+		</div>
+	</xp:div>	
+	</xp:div>	
+</xp:view>

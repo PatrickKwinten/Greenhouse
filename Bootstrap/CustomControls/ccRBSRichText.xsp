@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core"
+	xmlns:xe="http://www.ibm.com/xsp/coreex"
+	xmlns:xc="http://www.ibm.com/xsp/custom">	
+	<xp:scriptBlock id="scriptBlockCKEditor">
+		<xp:this.value>
+      <![CDATA[
+         require( ['dojo/_base/declare', 'ibm/xsp/widget/layout/xspCKEditor'], function( declare, xspCKEditor ){
+            return declare( 'org.wavin.joldenburger.CKEDITOR', xspCKEditor, {
+               constructor: function ckew_ctor(/*Object*/options){
+                  CKEDITOR.timestamp = '';
+               }
+            });    
+         });
+      ]]>
+		</xp:this.value>
+	</xp:scriptBlock>	
+	<xp:div styleClass="form-group">
+		<xp:label styleClass="col-sm-2 control-label"
+			for="inputRichText1" value="${compositeData.fieldLabel}" />
+		<div class="col-sm-10">
+			<xp:inputRichText id="inputRichText1"				
+				value="#{compositeData.dataSource[compositeData.fieldName]}"
+				required="${compositeData.required}"
+				htmlFilter="identity" htmlFilterIn="identity">
+				<xp:this.dojoAttributes>
+						<xp:dojoAttribute name="extraPlugins"
+							value="autogrow">
+						</xp:dojoAttribute>
+						<xp:dojoAttribute name="skin">
+							<xp:this.value><![CDATA[#{javascript:return @ClientType().equals("Web") ? "bootstrapck,/"+database.getFilePath()+"/bootstrapck/" : ""}]]></xp:this.value>
+						</xp:dojoAttribute>
+						<xp:dojoAttribute name="width" value="100%">
+						</xp:dojoAttribute>
+						<xp:dojoAttribute value="Full" name="toolbar">
+						</xp:dojoAttribute>
+					</xp:this.dojoAttributes>
+					<xp:this.dojoType><![CDATA[#{javascript:return @ClientType().equals("Web") ? "org.wavin.joldenburger.CKEDITOR" : ""}]]></xp:this.dojoType>
+			</xp:inputRichText>
+			<xp:text escape="true" id="computedField2"
+				styleClass="help-block" value="${compositeData.helpText}"
+				loaded="${!empty compositeData.helpText}">
+			</xp:text>
+		</div>
+	</xp:div>
+	</xp:view>

@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.5" replicaid="C1257F860035C1BB" version="9.0" xmlns="http://www.lotus.com/dxl">
-<noteinfo noteid="3ce" sequence="11" unid="1C51E6C1B86C7070C1257F88002CDF43">
-<created><datetime dst="true">20160401T101007,39+02</datetime></created>
-<modified><datetime dst="true">20160401T101108,02+02</datetime></modified>
-<revised><datetime dst="true">20160401T101108,01+02</datetime></revised>
-<lastaccessed><datetime dst="true">20160401T101108,02+02</datetime></lastaccessed>
-<addedtofile><datetime dst="true">20160401T101007,40+02</datetime></addedtofile></noteinfo>
+<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.5" replicaid="C1258005004FC87F" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="3ce" sequence="8" unid="52C341B1704039F2C1258005004FCDB5">
+<created><datetime dst="true">20160804T163140,05+02</datetime></created>
+<modified><datetime dst="true">20160804T163143,92+02</datetime></modified>
+<revised><datetime dst="true">20160804T163143,91+02</datetime></revised>
+<lastaccessed><datetime dst="true">20160804T163143,92+02</datetime></lastaccessed>
+<addedtofile><datetime dst="true">20160804T163140,06+02</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Patrick Kwinten/O=quintessens</name></updatedby>
 <wassignedby><name>CN=Patrick Kwinten/O=quintessens</name></wassignedby>
 <item name="$Flags"><text>gC~4;</text></item>
@@ -12,10 +12,10 @@
 
 
 
+
 <item name="$FileNames" sign="true"><text>blueimpGallery_resources.xsp</text></item>
-
-
 <item name="$DesignerVersion"><text>8.5</text></item>
+
 
 
 

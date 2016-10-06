@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core"
+	xmlns:xc="http://www.ibm.com/xsp/custom">
+<xp:this.data>
+		<xp:dominoDocument var="document1" formName="dummy"></xp:dominoDocument>
+	</xp:this.data>
+	<xc:ccLayout><xp:this.facets>
+	<xc:ccMenuPlugins xp:key="LeftColumn"></xc:ccMenuPlugins></xp:this.facets>
+		<xp:panel>
+		<xp:panel>
+				<div class="page-header">
+					<h1>
+						Reusable Fields</h1>
+				</div>				
+				<xc:ccRBSTextField dataSource="#{document1}"
+					required="false" fieldLabel="Firstname" fieldName="FirstName"
+					placeholder="Firstname">
+				</xc:ccRBSTextField>				
+				<xc:ccRBSTextField dataSource="#{document1}"
+					required="false" fieldLabel="Lastname" fieldName="LastName"
+					placeholder="Lastname">
+				</xc:ccRBSTextField>				
+				<xc:ccRBSTextField dataSource="#{document1}"
+					required="false" fieldLabel="Subject" fieldName="Subject"
+					placeholder="Enter subject">
+				</xc:ccRBSTextField>				
+				<xc:ccRBSRichText dataSource="#{document1}"
+					required="false" fieldLabel="Remarks" fieldName="Body">
+				</xc:ccRBSRichText>
+				<xp:br></xp:br>
+				<div class="col-sm-2">
+				</div>
+				<div class="col-sm-10">
+				<xp:button value="Save" id="button1"
+					styleClass="btn btn-primary" rendered="#{javascript:currentDocument.isEditable()}"><span class="glyphicon glyphicon-ok"></span>
+					<xp:eventHandler event="onclick" submit="true"
+						refreshMode="complete">
+						<xp:this.action>
+							<xp:actionGroup>
+								<xp:saveDocument></xp:saveDocument>
+								<xp:openPage
+									name="/home.xsp">
+								</xp:openPage>
+							</xp:actionGroup>
+						</xp:this.action>
+					</xp:eventHandler>
+				</xp:button>
+				<xp:button value="Cancel" id="button2"
+					styleClass="btn btn-default"
+					rendered="#{javascript:currentDocument.isEditable()}">
+					<span class="glyphicon glyphicon-remove"></span>
+					<xp:eventHandler event="onclick" submit="true"
+						refreshMode="complete">
+						<xp:this.action>
+							<xp:openPage name="/home.xsp"></xp:openPage>
+						</xp:this.action>
+					</xp:eventHandler>
+				</xp:button>
+				</div>				
+				</xp:panel>
+		</xp:panel></xc:ccLayout></xp:view>

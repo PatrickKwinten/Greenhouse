@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core"
+	xmlns:xc="http://www.ibm.com/xsp/custom">
+	<xp:this.data>
+		<xp:dominoDocument var="document1" formName="Contact"></xp:dominoDocument>
+	</xp:this.data>
+	
+		
+			<xp:panel>		
+			<div class="page-header">
+			<h1>
+				BootstrapCK-Skin 
+				<xp:span style="color:rgb(255,255,255)">.</xp:span>
+				<small>CKEditor4</small>
+			</h1>
+		</div>
+		<xp:br></xp:br>
+				<xp:inputRichText id="inputRichText1"
+					value="#{document1.Body}">
+					<xp:this.dojoAttributes>
+						<xp:dojoAttribute name="extraPlugins"
+							value="autogrow">
+						</xp:dojoAttribute>
+						<xp:dojoAttribute name="skin">
+							<xp:this.value><![CDATA[#{javascript:return @ClientType().equals("Web") ? "bootstrapck,/"+database.getFilePath()+"/bootstrapck/" : ""}]]></xp:this.value>
+						</xp:dojoAttribute>
+						<xp:dojoAttribute name="width" value="100%">
+						</xp:dojoAttribute>
+						<xp:dojoAttribute value="Full" name="toolbar">
+						</xp:dojoAttribute>
+					</xp:this.dojoAttributes>
+					<xp:this.dojoType><![CDATA[#{javascript:return @ClientType().equals("Web") ? "org.wavin.joldenburger.CKEDITOR" : ""}]]></xp:this.dojoType>
+				</xp:inputRichText>
+				<xp:br></xp:br>
+				<xc:ccBSCKE></xc:ccBSCKE>
+				<xp:br></xp:br>
+			</xp:panel>
+	
+</xp:view>

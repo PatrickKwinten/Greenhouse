@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.5" replicaid="C1258005004FC87F" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="61e" sequence="2" unid="255389850761C34CC12580440035BE60">
+<created><datetime dst="true">20161006T114701,44+02</datetime></created>
+<modified><datetime dst="true">20161006T114701,47+02</datetime></modified>
+<revised><datetime dst="true">20161006T114701,46+02</datetime></revised>
+<lastaccessed><datetime dst="true">20161006T114701,47+02</datetime></lastaccessed>
+<addedtofile><datetime dst="true">20161006T114701,45+02</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Patrick Kwinten/O=quintessens</name></updatedby>
+<wassignedby><name>CN=Patrick Kwinten/O=quintessens</name></wassignedby>
+<item name="$Flags"><text>gC~4;2</text></item>
+<item name="$TITLE"><text>ccBSCKE.properties</text></item>
+
+
+<item name="$FileNames" sign="true"><text>ccBSCKE.properties</text></item></note>

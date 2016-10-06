@@ -1,18 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<note xmlns="http://www.lotus.com/dxl" class="form">
-  <item name="$TITLE">
-    <text>Greenhouse.theme</text>
-  </item>
-  <item name="$Flags">
-    <text>34567Cg~`</text>
-  </item>
-  <item name="$FileNames" sign="true">
-    <text>Greenhouse.theme</text>
-  </item>
-  <item name="$CSSFiles">
-    <textlist>
-      <text>font-awesome-4.4.0/css/font-awesome-fontFamily.css</text>
-      <text>font-awesome-4.4.0/css/font-awesome.min.css</text>
-    </textlist>
-  </item>
-</note>
+<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.5" replicaid="C1258005004FC87F" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="3b6" sequence="5" unid="B308CBB9F4048AC8C1258005004FCD2A">
+<created><datetime dst="true">20160804T163138,66+02</datetime></created>
+<modified><datetime dst="true">20160804T163138,79+02</datetime></modified>
+<revised><datetime dst="true">20160804T163138,78+02</datetime></revised>
+<lastaccessed><datetime dst="true">20160804T163138,79+02</datetime></lastaccessed>
+<addedtofile><datetime dst="true">20160804T163138,67+02</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Patrick Kwinten/O=quintessens</name></updatedby>
+<wassignedby><name>CN=Patrick Kwinten/O=quintessens</name></wassignedby>
+<item name="$TITLE"><text>Greenhouse.theme</text></item>
+<item name="$Flags"><text>34567Cg~`</text></item>
+<item name="$DesignerVersion"><text>8.5.3</text></item>
+
+
+<item name="$FileNames" sign="true"><text>Greenhouse.theme</text></item>
+<item name="$CSSFiles"><textlist><text>font-awesome-4.4.0/css/font-awesome-fontFamily.css</text><text>font-awesome-4.4.0/css/font-awesome.min.css</text></textlist></item></note>

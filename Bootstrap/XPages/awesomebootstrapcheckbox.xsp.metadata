@@ -1,19 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.5" replicaid="C1257F860035C1BB" version="9.0" xmlns="http://www.lotus.com/dxl">
-<noteinfo noteid="40a" sequence="9" unid="CBAF75A63CD801CFC1257F8C003F8165">
-<created><datetime dst="true">20160405T133338,93+02</datetime></created>
-<modified><datetime dst="true">20160405T133551,93+02</datetime></modified>
-<revised><datetime dst="true">20160405T133551,92+02</datetime></revised>
-<lastaccessed><datetime dst="true">20160405T133551,93+02</datetime></lastaccessed>
-<addedtofile><datetime dst="true">20160405T133338,94+02</datetime></addedtofile></noteinfo>
+<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.5" replicaid="C1258005004FC87F" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="16a" sequence="7" unid="C7A55B8AE2C080F5C1258005004FCAA0">
+<created><datetime dst="true">20160804T163132,16+02</datetime></created>
+<modified><datetime dst="true">20160804T163144,16+02</datetime></modified>
+<revised><datetime dst="true">20160804T163144,15+02</datetime></revised>
+<lastaccessed><datetime dst="true">20160804T163144,16+02</datetime></lastaccessed>
+<addedtofile><datetime dst="true">20160804T163132,18+02</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Patrick Kwinten/O=quintessens</name></updatedby>
 <wassignedby><name>CN=Patrick Kwinten/O=quintessens</name></wassignedby>
 <item name="$Flags"><text>gC~4K</text></item>
 <item name="$TITLE"><text>awesomebootstrapcheckbox.xsp</text></item>
 
 
-
 <item name="$FileNames" sign="true"><text>awesomebootstrapcheckbox.xsp</text></item>
 <item name="$DesignerVersion"><text>8.5.3</text></item>
+
 
 
 

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core"
+	xmlns:xc="http://www.ibm.com/xsp/custom">
+	<xp:this.data>
+		<xp:dominoDocument var="dummydoc" formName="dummy"></xp:dominoDocument>
+	</xp:this.data>
+<xp:this.resources>
+		<xp:script src="moment/moment.js" clientSide="true"></xp:script>
+		<xp:script
+			src="bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"
+			clientSide="true">
+		</xp:script>
+		<xp:styleSheet
+			href="bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css">
+		</xp:styleSheet>
+	</xp:this.resources>
+	<xc:ccLayout>
+		<xp:panel>
+		
+		<div class="page-header">
+					<h1>
+						Datetimepicker
+						
+						
+					</h1>
+					<h3>Date-picker.js<small>Date/time picker widget based on twitter bootstrap</small></h3>
+					<h3>Moment.js<small>Parse, validate, manipulate, and display dates in JavaScript.</small></h3>
+					
+				</div>
+				<div class="col-sm-12">
+				<div class="well well-small">Format date and placeholder with an Attribute</div>
+				</div>
+				<div class="col-sm-12">
+					<div class="form-group">
+						<div class='input-group date'
+							id='datetimepicker1'>
+							<xp:inputText id="inputText2"
+								styleClass="form-control" value="#{document1.DateOfBirth}">
+								<xp:this.attrs>
+									<xp:attr name="data-date-format"
+										value="DD-MM-YYYY hh:mm:ss">
+									</xp:attr>
+									<xp:attr name="placeholder"
+										value="Enter data and time">
+									</xp:attr>
+								</xp:this.attrs>
+								<xp:this.converter>
+									<xp:convertDateTime type="date"
+										dateStyle="short">
+									</xp:convertDateTime>
+								</xp:this.converter>
+							</xp:inputText>
+							<span class="input-group-addon">
+								<span
+									class="glyphicon glyphicon-calendar">
+								</span>
+							</span>
+						</div>
+					</div>
+				</div>				
+				<xp:br></xp:br>
+				<div class="col-sm-12">
+				<div class="well well-small">Disable Time Picker and Days of Week</div>
+				</div>				
+				<div class="col-sm-12">
+					<div class="form-group">
+						<div class='input-group date' id='datetimepicker2'>
+							<xp:inputText id="inputText1"
+								styleClass="form-control">
+								<xp:this.attrs>
+									<xp:attr name="data-date-format"
+										value="DD-MM-YYYY">
+									</xp:attr>
+									<xp:attr name="placeholder"
+										value="Enter a date">
+									</xp:attr>
+								</xp:this.attrs>
+								<xp:this.converter>
+									<xp:convertDateTime type="date"></xp:convertDateTime>
+								</xp:this.converter>
+							</xp:inputText>
+							<span class="input-group-addon">
+								<span
+									class="glyphicon glyphicon-calendar">
+								</span>
+							</span>
+						</div>
+					</div>
+				</div>				
+				<xp:br></xp:br>
+				<div class="col-sm-12">
+				<div class="well well-small">Disable Time Picker</div>
+				</div>				
+				<div class="col-sm-12">
+					<div class="form-group">
+						<div class='input-group date'
+							id='datetimepicker3'>
+								<xp:inputText id="inputText3"
+									styleClass="form-control">
+									<xp:this.converter>
+										<xp:convertDateTime
+											type="date">
+										</xp:convertDateTime>
+									</xp:this.converter>
+									</xp:inputText>
+								<span class="input-group-addon">
+								<span
+									class="glyphicon glyphicon-clock">
+								</span>
+							</span>
+						</div>
+					</div>
+				</div>
+				<xp:br></xp:br>
+				<div class="col-sm-12">
+				<div class="well well-small">Select Date in Field and Icon</div>
+				</div>				
+				<div class="col-sm-12">
+					<div class="form-group">
+					<div id="datetimepicker4">
+						<div class='input-group date'>
+							<xp:inputText id="inputText4"
+								styleClass="form-control">
+								<xp:this.converter>
+									<xp:convertDateTime type="date">
+									</xp:convertDateTime>
+								</xp:this.converter>
+								<xp:this.attrs>
+									<xp:attr name="data-date-format"
+										value="DD-MM-YYYY">
+									</xp:attr>
+								</xp:this.attrs></xp:inputText>
+							<span class="input-group-addon">
+								<span
+									class="glyphicon glyphicon-calendar">
+								</span>
+							</span>
+						</div>
+					</div>
+					</div>
+				</div>
+				
+		</xp:panel>
+		<xp:this.facets>
+	<xc:ccMenuPlugins xp:key="LeftColumn"></xc:ccMenuPlugins></xp:this.facets></xc:ccLayout>
+	
+	
+	<xp:scriptBlock id="scriptBlock2">
+		<xp:this.value><![CDATA[$(function () {
+                $('#datetimepicker1').datetimepicker({
+                   pick12HourFormat: true,
+                   sideBySide: true                               
+                });
+            });]]></xp:this.value>
+	</xp:scriptBlock>
+	<xp:scriptBlock id="scriptBlock1">
+		<xp:this.value><![CDATA[$(function () {
+                $('#datetimepicker2').datetimepicker({
+                    pickTime: false,
+                    daysOfWeekDisabled:[0,6]
+                });
+            });
+]]></xp:this.value>
+	</xp:scriptBlock>
+	<xp:scriptBlock id="scriptBlock3">
+		<xp:this.value><![CDATA[$(function () {
+                $('#datetimepicker3').datetimepicker({
+                    pickDate: false,
+                    pick12HourFormat: true
+                });
+            });
+]]></xp:this.value>
+	</xp:scriptBlock>
+	<xp:scriptBlock id="scriptBlock4">
+		<xp:this.value><![CDATA[$(function () {
+                $('#datetimepicker4').datetimepicker({
+                    pickTime: false                    
+                });
+            });
+]]></xp:this.value>
+	</xp:scriptBlock>
+	</xp:view>

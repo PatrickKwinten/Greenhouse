@@ -52,6 +52,12 @@
 					<xe:pageTreeNode label="Chosen"
 						page="/chosen.xsp">
 					</xe:pageTreeNode>
+					<xe:pageTreeNode label="Datepicker"
+						page="/bootstrapdatetimepicker.xsp">
+					</xe:pageTreeNode>
+					<xe:pageTreeNode label="Reusable fields"
+						page="/reusablefields.xsp">
+					</xe:pageTreeNode>
 				</xe:this.children>
 			</xe:basicContainerNode>
 		</xe:this.treeNodes>
