@@ -2,16 +2,15 @@
 <xp:view xmlns:xp="http://www.ibm.com/xsp/core"
 	xmlns:xc="http://www.ibm.com/xsp/custom">
 	<xp:this.data>
-		<xp:dominoDocument var="document1" formName="Contact"></xp:dominoDocument>
+		<xp:dominoDocument var="document1" formName="dummy"></xp:dominoDocument>
 	</xp:this.data>
 	
 		
 			<xp:panel>		
 			<div class="page-header">
 			<h1>
-				BootstrapCK-Skin 
-				<xp:span style="color:rgb(255,255,255)">.</xp:span>
-				<small>CKEditor4</small>
+				CKEditor skin
+				
 			</h1>
 		</div>
 		<xp:br></xp:br>

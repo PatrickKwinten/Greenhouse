@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core"
+	xmlns:xc="http://www.ibm.com/xsp/custom">
+<xp:this.data>
+		<xp:dominoDocument var="document1" formName="Contact"></xp:dominoDocument>
+	</xp:this.data>
+	<script src="fileinput/js/fileinput.min.js"
+		type="text/javascript">
+	</script>
+	<link href="fileinput/css/fileinput.min.css" media="all"
+		rel="stylesheet" type="text/css" />
+	<xp:scriptBlock id="scriptBlockInitFile">
+		<xp:this.value>
+			<![CDATA[
+           $(document).ready( 
+               function() {
+                   $('input[type=file]').fileinput({
+						previewFileType: "image",
+						browseClass: "btn btn-primary",
+						browseLabel: "Browse",
+						browseIcon: '<i class="glyphicon glyphicon-plus"></i>',
+						removeClass: "btn btn-danger",
+						removeLabel: "Delete",
+						removeIcon: '<i class="glyphicon glyphicon-trash"></i>',
+						uploadClass: "btn btn-info",
+						uploadLabel: "Upload",
+						uploadIcon: '<i class="glyphicon glyphicon-upload"></i>',
+				});
+               }
+           );
+        ]]>
+		</xp:this.value>
+	</xp:scriptBlock>     
+	<xc:ccLayout><xp:this.facets>
+	<xc:ccMenuPlugins xp:key="LeftColumn"></xc:ccMenuPlugins></xp:this.facets>
+		<xp:panel>
+		<xp:panel>			
+				<div class="page-header">
+					<h1>
+						FileInput
+						<small>http://plugins.krajee.com/file-input</small>
+					</h1>
+				</div>
+				<xp:inputText id="inputText1"
+					value="#{document1.Subject}">
+				</xp:inputText>
+				<xp:br></xp:br>
+				<xp:fileUpload id="fileUpload1"
+					value="#{document1.fileAttachment}">
+					<xp:this.attrs>
+						<xp:attr name="accept" value="image/*" />
+					</xp:this.attrs>						
+				</xp:fileUpload>
+				<xp:br></xp:br>
+				<xp:fileDownload rows="30" id="fileDownload1"
+					displayLastModified="true" value="#{document1.fileAttachment}" hideWhen="true" allowDelete="true">
+				</xp:fileDownload>
+				<xp:br></xp:br>
+				<xp:button value="Save" id="button1"
+					styleClass="btn btn-primary">
+					<xp:eventHandler event="onclick" submit="true"
+						refreshMode="complete">
+						<xp:this.action>
+							<xp:actionGroup>
+								<xp:saveDocument></xp:saveDocument>
+								<xp:openPage name="/FileInput.xsp"></xp:openPage>
+							</xp:actionGroup>
+						</xp:this.action>
+					</xp:eventHandler>
+				</xp:button>				
+			</xp:panel>
+		</xp:panel></xc:ccLayout></xp:view>

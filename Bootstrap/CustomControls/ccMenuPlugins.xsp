@@ -58,6 +58,12 @@
 					<xe:pageTreeNode label="Reusable fields"
 						page="/reusablefields.xsp">
 					</xe:pageTreeNode>
+					<xe:pageTreeNode label="File input"
+						page="/fileinput.xsp">
+					</xe:pageTreeNode>
+					<xe:pageTreeNode label="CKEditor skin"
+						page="/ckeditor.xsp">
+					</xe:pageTreeNode>
 				</xe:this.children>
 			</xe:basicContainerNode>
 		</xe:this.treeNodes>
