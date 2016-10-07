@@ -64,6 +64,9 @@
 					<xe:pageTreeNode label="CKEditor skin"
 						page="/ckeditor.xsp">
 					</xe:pageTreeNode>
+					<xe:pageTreeNode label="Slider"
+						page="/bootstrapSlider.xsp">
+					</xe:pageTreeNode>
 				</xe:this.children>
 			</xe:basicContainerNode>
 		</xe:this.treeNodes>

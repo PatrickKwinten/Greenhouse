@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config>
+  <faces-config-extension>
+    <namespace-uri>http://www.ibm.com/xsp/custom</namespace-uri>
+    <default-prefix>xc</default-prefix>
+  </faces-config-extension>
+  <composite-component>
+    <component-type>ccBootstrapSlider</component-type>
+    <composite-name>ccBootstrapSlider</composite-name>
+    <composite-file>/ccBootstrapSlider.xsp</composite-file>
+    <composite-extension>
+      <designer-extension>
+        <in-palette>true</in-palette>
+        <render-markup>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&#xd;
+&lt;xp:view&#xd;
+  xmlns:xp="http://www.ibm.com/xsp/core"&gt;&#xd;
+  &lt;B&gt;Bootstrap Slider Custom Control&lt;/B&gt;&lt;/xp:view&gt;</render-markup>
+      </designer-extension>
+    </composite-extension>
+    <property>
+      <property-name>SliderTicks</property-name>
+      <property-class>string</property-class>
+      <display-name>SliderTicks</display-name>
+      <description>Used to define the values of ticks. Tick marks are indicators to denote special values in the range. This option overwrites min and max options. Must be a number. This OVERRIDES the min and max settings. If you set the values for ticks than you can use SliderTickLabels.&#xd;
+&#xd;
+Enter numbers separated by commas like 1,2,3,4,5</description>
+      <property-extension>
+        <required>false</required>
+      </property-extension>
+    </property>
+    <property>
+      <property-name>step</property-name>
+      <property-class>string</property-class>
+      <display-name>step</display-name>
+      <description>increment step</description>
+      <property-extension>
+        <designer-extension>
+          <default-value>1</default-value>
+        </designer-extension>
+        <required>true</required>
+      </property-extension>
+    </property>
+    <property>
+      <property-name>SliderTickLabels</property-name>
+      <property-class>string</property-class>
+      <display-name>SliderTickLabels</display-name>
+      <property-extension>
+        <required>false</required>
+      </property-extension>
+      <description>Enter the labels, one for each tick, Use a quote around each value, separate by commas. Use an empty string for no labels. Must use the SliderTicks if you want tick labels.</description>
+    </property>
+    <property>
+      <property-name>initialValue</property-name>
+      <property-class>string</property-class>
+      <description>Initial value of the slider</description>
+    </property>
+    <property>
+      <property-name>showToolTip</property-name>
+      <property-class>string</property-class>
+      <display-name>showToolTip</display-name>
+      <property-extension>
+        <designer-extension>
+          <editor>com.ibm.workplace.designer.property.editors.comboParameterEditor</editor>
+          <editor-parameter>show&#xd;
+hide&#xd;
+always</editor-parameter>
+          <default-value>show</default-value>
+        </designer-extension>
+      </property-extension>
+    </property>
+    <property>
+      <property-name>HandleType</property-name>
+      <property-class>string</property-class>
+      <display-name>HandleType</display-name>
+      <property-extension>
+        <designer-extension>
+          <editor>com.ibm.workplace.designer.property.editors.comboParameterEditor</editor>
+          <editor-parameter>round&#xd;
+square</editor-parameter>
+          <default-value>round</default-value>
+        </designer-extension>
+      </property-extension>
+    </property>
+    <property>
+      <property-name>sliderBinding</property-name>
+      <property-class>string</property-class>
+      <display-name>sliderBinding</display-name>
+    </property>
+    <property>
+      <property-name>orientation</property-name>
+      <property-class>string</property-class>
+      <display-name>orientation</display-name>
+      <property-extension>
+        <designer-extension>
+          <default-value>horizontal</default-value>
+          <editor>com.ibm.workplace.designer.property.editors.comboParameterEditor</editor>
+          <editor-parameter>horizontal&#xd;
+vertical</editor-parameter>
+        </designer-extension>
+      </property-extension>
+    </property>
+    <property>
+      <property-name>tooltip_position</property-name>
+      <property-class>string</property-class>
+      <display-name>tooltip_position</display-name>
+      <property-extension>
+        <designer-extension>
+          <editor>com.ibm.workplace.designer.property.editors.comboParameterEditor</editor>
+          <editor-parameter>top&#xd;
+bottom&#xd;
+left&#xd;
+right</editor-parameter>
+          <default-value>top</default-value>
+        </designer-extension>
+      </property-extension>
+      <description>Choose top or bottom for horizontal orientation, left or right for vertical orientation</description>
+    </property>
+    <property>
+      <property-name>tooltip_text</property-name>
+      <property-class>string</property-class>
+      <display-name>tooltip_text</display-name>
+      <description>Enter text that will appear BEFORE the value in the toolip</description>
+    </property>
+    <property>
+      <property-name>min</property-name>
+      <property-class>string</property-class>
+      <display-name>min</display-name>
+      <property-extension>
+        <designer-extension>
+          <default-value>0</default-value>
+        </designer-extension>
+      </property-extension>
+      <description>Minimum possible value</description>
+    </property>
+    <property>
+      <property-name>max</property-name>
+      <property-class>string</property-class>
+      <display-name>max</display-name>
+      <property-extension>
+        <designer-extension>
+          <default-value>10</default-value>
+        </designer-extension>
+      </property-extension>
+      <description>Maximum Possible Value</description>
+    </property>
+  </composite-component>
+</faces-config>

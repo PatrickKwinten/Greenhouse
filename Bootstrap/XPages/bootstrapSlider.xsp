@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view
+  xmlns:xp="http://www.ibm.com/xsp/core"
+  xmlns:xc="http://www.ibm.com/xsp/custom">
+  <xp:this.beforePageLoad><![CDATA[#{javascript:viewScope.testBind="";}]]></xp:this.beforePageLoad>
+  <xc:ccLayout>
+  	<xp:panel>
+  	
+  	<h1>Plugins
+  	<small>Bootstrap Slider</small>
+  	</h1>
+		
+<p>A complete rewrite of the original bootstrap-slider by Stefan Petre. http://seiyria.github.io/bootstrap-slider/</p>
+  	
+  	<div class="container">
+  
+    <xc:ccBootstrapSlider
+      step="10"
+      initialValue="0"
+      showToolTip="always"
+      HandleType="square"
+      sliderBinding="viewScope.testBind"
+      orientation="horizontal"
+      tooltip_position="top"
+      tooltip_text="You chose"
+      max="100"
+      min="0">
+    </xc:ccBootstrapSlider>
+    
+  <xp:button
+    value="Update value of slider"
+    id="button1">
+  <xp:eventHandler
+    event="onclick"
+    submit="true"
+    refreshMode="partial" refreshId="computedField1">
+  </xp:eventHandler></xp:button>
+  <xp:br></xp:br>
+  <xp:br></xp:br>
+  <xp:text
+    escape="true"
+    id="computedField1" value="#{viewScope.testBind}">
+     
+  </xp:text>
+  </div>
+  	</xp:panel>
+  	<xp:this.facets>
+	<xc:ccMenuPlugins xp:key="LeftColumn"></xc:ccMenuPlugins></xp:this.facets></xc:ccLayout>
+
+</xp:view>

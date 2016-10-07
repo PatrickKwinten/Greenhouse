@@ -1,0 +1,6 @@
+/*fix to override the xsp css that screws up the slider */
+  
+ .horizontalSlider .slider .tooltip {
+    top: 0px !important;
+    
+}

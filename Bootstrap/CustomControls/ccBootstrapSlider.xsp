@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view
+  xmlns:xp="http://www.ibm.com/xsp/core">
+  <xp:this.resources>
+    <!-- temporary redefine define.amd object  (Dojo AMD loader) -->
+    <xp:script
+      clientSide="true"
+      type="text/javascript">
+      <xp:this.contents><![CDATA[${javascript:"if (typeof define === 'function' && define.amd) {if(define.amd.vendor =='dojotoolkit.org'){define._amd = define.amd;delete define.amd;}}";}]]></xp:this.contents>
+    </xp:script>
+    <xp:script
+      src="bootstrap-slider-master/bootstrap-slider.min.js"
+      clientSide="true">
+    </xp:script>
+    <!-- restore define.amd object (Dojo AMD loader) -->
+    <xp:script
+      clientSide="true">
+      <xp:this.contents><![CDATA[${javascript:"if (typeof define === 'function' && define._amd) {define.amd = define._amd; delete define._amd;}"}]]></xp:this.contents>
+    </xp:script>
+    <xp:styleSheet
+      href="bootstrap-slider-master/css/bootstrap-slider.min.css"></xp:styleSheet>
+    <xp:styleSheet
+      href="/sliderCustom.css"></xp:styleSheet>
+  </xp:this.resources>
+  <xp:panel
+    id="sliderPanel">
+    <xp:this.styleClass><![CDATA[#{javascript:return (compositeData.orientation == "horizontal" && compositeData.tooltip_position == "top") ? "horizontalSlider" : "";}]]></xp:this.styleClass>
+    <xp:inputText
+      id="sliderInput">
+      <xp:this.value><![CDATA[${javascript:"#{"+compositeData.sliderBinding+"}"}]]></xp:this.value>
+      <xp:this.attrs>
+        <xp:attr name="data-slider-ticks">
+          <xp:this.value><![CDATA[#{javascript:if (compositeData.SliderTicks == null || compositeData.SliderTicks == ""){
+  return "";
+} else {
+    return "[" + compositeData.SliderTicks + "]";
+}}]]></xp:this.value>
+        </xp:attr>
+        <xp:attr name="data-slider-ticks-labels">
+          <xp:this.value><![CDATA[#{javascript:
+if (compositeData.SliderTickLabels == null || compositeData.SliderTickLabels == ""){
+  return "";
+} else {
+    return "[" + compositeData.SliderTickLabels + "]";
+}
+ 
+}]]></xp:this.value>
+        </xp:attr>
+        <xp:attr
+          name="data-slider-step"
+          value="#{javascript:return compositeData.step;}">
+        </xp:attr>
+        <xp:attr
+          name="data-slider-value"
+          value="#{javascript:return compositeData.initialValue;}">
+        </xp:attr>
+        <xp:attr
+          value="#{javascript:return compositeData.min;}"
+          name="data-slider-min">
+        </xp:attr>
+        <xp:attr
+          value="#{javascript:return compositeData.max;}"
+          name="data-slider-max">
+        </xp:attr>
+        <xp:attr
+          name="data-slider-handle">
+          <xp:this.value><![CDATA[#{javascript:var typeHandle = compositeData.HandleType;
+if (!!typeHandle){
+  return typeHandle;
+} else {
+  return "round"  
+}
+}]]></xp:this.value>
+        </xp:attr>
+        <xp:attr
+          name="data-slider-orientation"
+          value="#{javascript:return compositeData.orientation;}">
+        </xp:attr>
+      </xp:this.attrs>
+    </xp:inputText>
+    <xp:eventHandler
+      event="onClientLoad"
+      submit="false">
+      <xp:this.script><![CDATA[$(document).ready( function() {
+  //compute text for tooltip
+  var tooltipText = "#{javascript:compositeData.tooltip_text}";
+  if (tooltipText!= null || tooltipText != ""){
+    tooltipText = tooltipText + " ";
+  } else {
+    tooltipText = "";
+  }
+  x$('#{id:sliderInput}').slider( {
+    tooltip_position: '#{javascript:compositeData.tooltip_position}',
+    formatter : function(value) {
+      return tooltipText + value;
+    }
+  });
+});
+ 
+ 
+ 
+function x$(idTag, param) { // Updated 18 Feb 2012
+  idTag = idTag.replace(/:/gi, "\\:") + (param ? param : "");
+  return ($("#" + idTag));
+}]]></xp:this.script>
+    </xp:eventHandler>
+  </xp:panel>
+</xp:view>
