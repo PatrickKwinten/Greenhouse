@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view
+  xmlns:xp="http://www.ibm.com/xsp/core">
+  <xp:this.resources>
+    <xp:styleSheet
+      href="/bootstrap-switch/css/bootstrap3/bootstrap-switch.min.css"></xp:styleSheet>
+    <xp:script
+      src="/bootstrap-switch/js/bootstrap-switch.min.js"
+      clientSide="true">
+    </xp:script>
+  </xp:this.resources>
+  <xp:panel
+    id="checkBoxPanel">
+    <xp:eventHandler
+      event="onClientLoad"
+      submit="false">
+      <xp:this.script><![CDATA[x$("#{id:checkBox1}").bootstrapSwitch();
+ 
+var refreshId = "#{javascript: (compositeData.refreshId!=null) ? getClientId(compositeData.refreshId):''}";
+ 
+if (refreshId != null || refreshId != ""){
+//set the partial refresh if the user put an id in the cc property
+  x$("#{id:checkBox1}").on('switchChange.bootstrapSwitch', function(event, state) {
+    XSP.partialRefreshPost("#{javascript: (compositeData.refreshId!=null) ? getClientId(compositeData.refreshId):''}");
+});
+}
+ 
+ 
+ 
+function x$(idTag, param){ //Updated 18 Feb 2012
+ idTag=idTag.replace(/:/gi, "\\:")+(param ? param : "");
+ return($("#"+idTag));
+}]]></xp:this.script>
+    </xp:eventHandler>
+    <xp:checkBox
+      id="checkBox1"
+       
+      checkedValue="${javascript:return compositeData.checkedValue;}"
+      uncheckedValue="${javascript:return compositeData.uncheckedValue;}"
+      defaultChecked="false">
+      <xp:this.value><![CDATA[${javascript:"#{"+compositeData.switchBinding+"}"}]]></xp:this.value>
+      <xp:this.attrs>
+        <xp:attr
+          name="data-on-text"
+          value="${javascript:return compositeData.onLabel;}">
+        </xp:attr>
+        <xp:attr
+          name="data-off-text"
+          value="${javascript:return compositeData.offLabel;}">
+        </xp:attr>
+        <xp:attr
+          name="data-label-text"
+          value="${javascript:return compositeData.labelText;}">
+        </xp:attr>
+        <xp:attr
+          name="data-size"
+          value="${javascript:return compositeData.dataSize;}">
+        </xp:attr>
+        <xp:attr
+          name="data-on-Color"
+          value="${javascript:return compositeData.onColor;}">
+        </xp:attr>
+        <xp:attr
+          name="data-off-Color"
+          value="${javascript:return compositeData.offColor;}">
+        </xp:attr>
+        <xp:attr
+          name="data-handle-width"
+          value="${javascript:return compositeData.handleWidth;}">
+        </xp:attr>
+        <xp:attr
+          name="data-label-width"
+          value="${javascript:return compositeData.labelWidth;}">
+        </xp:attr>
+        <xp:attr
+          name="data-inverse"
+          value="${javascript:return compositeData.inverse;}">
+        </xp:attr>
+      </xp:this.attrs>
+    </xp:checkBox>
+  </xp:panel>
+</xp:view>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core"
+	xmlns:xc="http://www.ibm.com/xsp/custom">
+	<xp:this.resources>
+		<xp:script src="/common.js" clientSide="true"></xp:script>
+		<xp:script src="magicsuggest/magicsuggest.js"
+			clientSide="true">
+		</xp:script>
+		<xp:styleSheet href="magicsuggest/magicsuggest.css"></xp:styleSheet>
+		
+	</xp:this.resources>
+<xp:scriptBlock id="scriptBlock2">
+<xp:this.value><![CDATA[
+$(document).ready(
+function() {
+x$( "#{id:cbSuggest}" ).magicSuggest({
+placeholder: "Select a car"
+});
+}
+);
+]]></xp:this.value>
+</xp:scriptBlock>
+<xp:scriptBlock id="scriptBlock1">
+<xp:this.value><![CDATA[
+$(document).ready(
+function() {
+x$( "#{id:listSuggest}" ).magicSuggest({
+placeholder: "Select a car"                   
+});
+}
+);
+]]></xp:this.value>
+</xp:scriptBlock> 
+	<xc:ccLayout><xp:this.facets>
+	<xc:ccMenuPlugins xp:key="LeftColumn"></xc:ccMenuPlugins></xp:this.facets>
+		<xp:panel>
+		<h1>Plugins</h1>
+			<h3>Magic Suggest</h3>
+			<p>
+ Multiple selection combobox built for bootstrap themes. Check the
+
+ <xp:link escape="true" text="homepage" id="link1"
+ 	value="http://nicolasbize.com/magicsuggest/">
+ </xp:link>
+			</p>
+		<div class="col-md-4">
+		
+<xp:comboBox id="cbSuggest">
+<xp:this.attrs>
+<xp:attr name="multiple" value="true"></xp:attr>
+</xp:this.attrs>
+<xp:selectItem itemLabel="Buchatti 1953" itemValue="Buchatti 1953"></xp:selectItem>
+<xp:selectItem itemLabel="Citroen 1970" itemValue="Citroen 1970"></xp:selectItem>
+<xp:selectItem itemLabel="Daf 1966" itemValue="Daf 1966"></xp:selectItem>
+<xp:selectItem itemLabel="Ferrari 1966" itemValue="Ferrari 1966"></xp:selectItem>
+<xp:selectItem itemLabel="Honda" itemValue="Honda"></xp:selectItem>
+<xp:selectItem itemLabel="Jaguar 2010" itemValue="Jaguar 2010"></xp:selectItem>
+<xp:selectItem itemLabel="Lamborgini 2010" itemValue="Lamborgini 2010"></xp:selectItem>
+<xp:selectItem itemLabel="Mazda 1980" itemValue="Mazda 1980"></xp:selectItem>
+<xp:selectItem itemLabel="Nissan 1980" itemValue="Nissan 2010"></xp:selectItem>
+<xp:selectItem itemLabel="Peugeot 1966" itemValue="Peugeot 1966"></xp:selectItem>
+</xp:comboBox>
+</div>
+
+
+<div class="col-md-4">
+<xp:listBox id="listSuggest"
+style="width: 100% !important;">
+<xp:this.attrs>
+<xp:attr name="multiple" value="multiple"></xp:attr>
+</xp:this.attrs>
+<xp:selectItem itemLabel="Buchatti 1953" itemValue="Buchatti 1953"></xp:selectItem>
+<xp:selectItem itemLabel="Citroen 1970" itemValue="Citroen 1970"></xp:selectItem>
+<xp:selectItem itemLabel="Daf 1966" itemValue="Daf 1966"></xp:selectItem>
+<xp:selectItem itemLabel="Ferrari 1966" itemValue="Ferrari 1966"></xp:selectItem>
+<xp:selectItem itemLabel="Honda" itemValue="Honda"></xp:selectItem>
+<xp:selectItem itemLabel="Jaguar 2010" itemValue="Jaguar 2010"></xp:selectItem>
+<xp:selectItem itemLabel="Lamborgini 2010" itemValue="Lamborgini 2010"></xp:selectItem>
+<xp:selectItem itemLabel="Mazda 1980" itemValue="Mazda 1980"></xp:selectItem>
+<xp:selectItem itemLabel="Nissan 1980" itemValue="Nissan 2010"></xp:selectItem>
+<xp:selectItem itemLabel="Peugeot 1966" itemValue="Peugeot 1966"></xp:selectItem>
+</xp:listBox>
+</div>
+		
+		</xp:panel>
+	</xc:ccLayout>
+</xp:view>

@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xp:view xmlns:xp="http://www.ibm.com/xsp/core"
-	xmlns:xe="http://www.ibm.com/xsp/coreex">
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xe="http://www.ibm.com/xsp/coreex">
 
-	
+
 	<xe:navigator id="navigator1" expandable="true"
 		expandEffect="wipe">
 		<xe:this.treeNodes>
 			<xe:basicContainerNode label="Image Gallery">
 				<xe:this.children>
 					<xe:pageTreeNode label="blueimp"
-						page="/blueimpGallery.xsp">
-					</xe:pageTreeNode>
+						page="/blueimpGallery.xsp" />
+
 
 				</xe:this.children>
 			</xe:basicContainerNode>
@@ -18,56 +17,43 @@
 			<xe:basicContainerNode label="Dialogs">
 				<xe:this.children>
 					<xe:pageTreeNode label="Bootbox"
-						page="/bootbox.xsp">
-					</xe:pageTreeNode>
-
+						page="/bootbox.xsp" />
 				</xe:this.children>
 			</xe:basicContainerNode>
-
-
-
-
 			<xe:basicContainerNode label="Filestyle">
 				<xe:this.children>
 					<xe:pageTreeNode label="Normal"
-						page="/bootstrapfilestyle.xsp">
-					</xe:pageTreeNode>
+						page="/bootstrapfilestyle.xsp" />
 					<xe:pageTreeNode
-						page="/bootstrapfilestyle_jquery.xsp" label="jQuery">
-					</xe:pageTreeNode>
+						page="/bootstrapfilestyle_jquery.xsp" label="jQuery" />
 				</xe:this.children>
 			</xe:basicContainerNode>
 			<xe:basicContainerNode label="Form utilities">
 				<xe:this.children>
-					<xe:pageTreeNode label=" Select"
-						page="/bootstrapselect.xsp">
+					<xe:pageTreeNode label="Bootstrap Switch"
+						page="/flipswitch.xsp" />
+					<xe:pageTreeNode label="Bootstrap Switch"
+						page="/bootstrapswitch.xsp" />
+					<xe:pageTreeNode label="Chosen" page="/chosen.xsp" />
+					<xe:pageTreeNode label="CKEditor skin"
+						page="/ckeditor.xsp" />
+					<xe:pageTreeNode label="Datepicker"
+						page="/bootstrapdatetimepicker.xsp" />
+					<xe:pageTreeNode label="File input"
+						page="/fileinput.xsp" />
+					<xe:pageTreeNode label="Magic Suggest"
+						page="/magicsuggest.xsp">
 					</xe:pageTreeNode>
 					<xe:pageTreeNode label="Touchspin"
-						page="/Touchspin.xsp">
-					</xe:pageTreeNode>
-
-					<xe:pageTreeNode label="Bootstrap Switch"
-						page="/flipswitch.xsp">
-					</xe:pageTreeNode>
-					<xe:pageTreeNode label="Chosen"
-						page="/chosen.xsp">
-					</xe:pageTreeNode>
-					<xe:pageTreeNode label="Datepicker"
-						page="/bootstrapdatetimepicker.xsp">
-					</xe:pageTreeNode>
+						page="/Touchspin.xsp" />
 					<xe:pageTreeNode label="Reusable fields"
-						page="/reusablefields.xsp">
-					</xe:pageTreeNode>
-					<xe:pageTreeNode label="File input"
-						page="/fileinput.xsp">
-					</xe:pageTreeNode>
-					<xe:pageTreeNode label="CKEditor skin"
-						page="/ckeditor.xsp">
-					</xe:pageTreeNode>
+						page="/reusablefields.xsp" />
+					<xe:pageTreeNode label="Select"
+						page="/bootstrapselect.xsp" />
 					<xe:pageTreeNode label="Slider"
-						page="/bootstrapSlider.xsp">
-					</xe:pageTreeNode>
+						page="/bootstrapSlider.xsp" />
 				</xe:this.children>
 			</xe:basicContainerNode>
 		</xe:this.treeNodes>
-	</xe:navigator></xp:view>
+	</xe:navigator>
+</xp:view>

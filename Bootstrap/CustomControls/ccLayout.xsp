@@ -68,6 +68,8 @@
 					Way to have Application Name in title bar area
 					<xe:this.titleBarName>Application Name</xe:this.titleBarName>
 				-->
+				
+				
 				<xe:this.titleBarTabs>
 					<xe:pageTreeNode page="bootstrap.xsp"
 						selection="/Core/.*" label="Basic">
@@ -75,15 +77,54 @@
 					<xe:pageTreeNode page="/plugins.xsp"
 						selection="/Domino/.*" label="Plugins">
 					</xe:pageTreeNode>
-
-
-
-
-
 				</xe:this.titleBarTabs>
+				
+				
+				
 				<xe:this.placeBarActions>
 					<xe:pageTreeNode page="/home.xsp" label="Home">
-					</xe:pageTreeNode>
+					</xe:pageTreeNode>				
+					
+					
+					
+					
+					
+					<xe:basicContainerNode label="Form utilities">
+						<xe:this.children>
+							<xe:pageTreeNode label="Bootstrap Switch"
+								page="/flipswitch.xsp" />
+							<xe:pageTreeNode label="Bootstrap Switch"
+								page="/bootstrapswitch.xsp" />
+							<xe:pageTreeNode label="Chosen" page="/chosen.xsp" />
+							<xe:pageTreeNode label="CKEditor skin"
+								page="/ckeditor.xsp" />
+							<xe:pageTreeNode label="Datepicker"
+								page="/bootstrapdatetimepicker.xsp" />
+							<xe:pageTreeNode label="File input"
+								page="/fileinput.xsp" />
+							<xe:pageTreeNode label="Magic Suggest"
+								page="/magicsuggest.xsp">
+							</xe:pageTreeNode>
+							<xe:pageTreeNode label="Touchspin"
+								page="/Touchspin.xsp" />
+							<xe:pageTreeNode label="Reusable fields"
+								page="/reusablefields.xsp" />
+							<xe:pageTreeNode label="Select"
+								page="/bootstrapselect.xsp" />
+							<xe:pageTreeNode label="Slider"
+								page="/bootstrapSlider.xsp" />
+						</xe:this.children>
+					</xe:basicContainerNode>
+					<xe:basicContainerNode label="Filestyle">
+						<xe:this.children>
+							<xe:pageTreeNode label="Normal"
+								page="/bootstrapfilestyle.xsp" />
+							<xe:pageTreeNode
+								page="/bootstrapfilestyle_jquery.xsp" label="jQuery" />
+						</xe:this.children>
+					</xe:basicContainerNode>
+					
+					
 					<xe:basicContainerNode label="Other Greenhouses">
 						<xe:this.children>
 							<xe:pageTreeNode page="Core_Home"
@@ -178,6 +219,7 @@
 
 			</xe:applicationConfiguration>
 		</xe:this.configuration>
+		
 		<xp:callback id="OneUIMainAreaCallback"></xp:callback>
 		<xp:eventHandler event="onItemClick" submit="true"
 			refreshMode="complete">
@@ -192,4 +234,5 @@ if(s=="home") {
 }	}]]></xp:this.action>
 		</xp:eventHandler>
 	</xe:applicationLayout>
+	
 </xp:view>

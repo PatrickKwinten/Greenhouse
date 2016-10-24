@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core"
+	xmlns:xc="http://www.ibm.com/xsp/custom">
+	<xp:this.resources>
+		<xp:script src="/common.js" clientSide="true"></xp:script>
+	</xp:this.resources>
+	<xc:ccLayout><xp:this.facets>
+	<xc:ccMenuPlugins xp:key="LeftColumn"></xc:ccMenuPlugins></xp:this.facets>
+		<xp:panel><xc:ccBootstrapSwitch refreshId="computedField1"
+		checkedValue="checked" uncheckedValue="not checked" offLabel="OFF"
+		onLabel="ON" labelText="Label" dataSize="normal" offColor="success"
+		onColor="warning" handleWidth="auto" labelWidth="auto" inverse="false"
+		switchBinding="viewScope.sampleValue">
+	</xc:ccBootstrapSwitch>
+	<xp:br></xp:br>
+	<xp:br></xp:br>
+	<xp:text escape="true" id="computedField1"
+		value="#{viewScope.sampleValue}">
+	</xp:text></xp:panel></xc:ccLayout>
+</xp:view>
